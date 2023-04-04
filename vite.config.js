@@ -6,5 +6,13 @@ export default defineConfig({
     plugins: [vue()],
     build: {
         minify: false,
+        terserOptions: {
+            compress: false,
+            mangle: false,
+        },
+        cssCodeSplit: false,
+        commonjsOptions: {
+            transformMixedEsModules: false,
+        },
     },
 });
