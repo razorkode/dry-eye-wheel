@@ -1,5 +1,4 @@
 <script setup>
-import { onMounted } from 'vue';
 import LottieAnimation from 'lottie-vuejs/src/LottieAnimation.vue';
 
 const props = defineProps({
@@ -12,7 +11,7 @@ const props = defineProps({
 
 <template>
     <LottieAnimation
-        path="./dry-eye-wheel/sun.json"
+        path="./sun.json"
         :loop="true"
         :autoPlay="true"
         :width="256"

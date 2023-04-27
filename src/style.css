@@ -1,0 +1,21 @@
+@font-face {
+    font-family: EuclidCircularA-Bold;
+    src: url(/src/assets/fonts/EuclidCircularA-Bold.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: EuclidCircularA-SemiBold;
+    src: url(/src/assets/fonts/EuclidCircularA-SemiBold.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-euclid-circular-bold {
+    font-family: 'EuclidCircularA-Bold', sans-serif;
+}
+
+.font-euclid-circular-semibold {
+    font-family: 'EuclidCircularA-SemiBold', sans-serif;
+}
