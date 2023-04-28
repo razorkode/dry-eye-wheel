@@ -1,8 +1,8 @@
 <script setup>
-// import SunAnimation from './components/icons/SunAnimation.vue';
-import ManagementSvg from './components/ManagementSvg.vue';
-import MitigationSvg from './components/MitigationSvg.vue';
-import MeasurementSvg from './components/MeasurementSvg.vue';
+import SunAnimation from './components/icons/SunAnimation.vue';
+import ManagementSvg from './components/management/MainSvg.vue';
+import MitigationSvg from './components/mitigation/MainSvg.vue';
+import MeasurementSvg from './components/measurement/MainSvg.vue';
 </script>
 
 <template>
