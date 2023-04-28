@@ -1,5 +1,5 @@
 <script setup>
-import { useControlsStore } from './stores/controlsStore';
+import { useControlsStore } from './stores/controlsStore.js';
 import SunAnimation from './components/icons/SunAnimation.vue';
 import ManagementSvg from './components/management/MainSvg.vue';
 import MitigationSvg from './components/mitigation/MainSvg.vue';

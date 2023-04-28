@@ -1,17 +1,21 @@
 <script setup>
-import { ref, computed } from 'vue';
+import { ref, computed, watch } from 'vue';
+import { useControlsStore } from '../stores/controlsStore.js';
 import VueSlider from 'vue-slider-component';
 
+const controlsStore = useControlsStore();
+
 const verticalSliderVal = ref(0);
-const sectionVal = computed(() => {
-    if (verticalSliderVal.value === 0) {
-        return 'mitigation';
+
+watch(verticalSliderVal, (newValue) => {
+    if (newValue === 0) {
+        controlsStore.selectedSection = 'mitigation';
     }
-    if (verticalSliderVal.value === 50) {
-        return 'measurement';
+    if (newValue === 50) {
+        controlsStore.selectedSection = 'measurement';
     }
-    if (verticalSliderVal.value === 100) {
-        return 'management';
+    if (newValue === 100) {
+        controlsStore.selectedSection = 'management';
     }
 });
 </script>
@@ -29,7 +33,7 @@ const sectionVal = computed(() => {
         style="display: inline-block; height: 100%" />
 
     {{ verticalSliderVal }}
-    {{ sectionVal }}
+    {{ controlsStore.selectedSection }}
 </template>
 
 <style lang="postcss">
@@ -40,21 +44,16 @@ const sectionVal = computed(() => {
     border: 3px solid #e5e6e7;
 }
 
-/* component style */
 .vue-slider-disabled {
     opacity: 0.5;
     cursor: not-allowed;
 }
 
-/* rail style */
 .vue-slider-rail {
-    /* background-color: #f00; */
     border-radius: 15px;
 }
 
-/* process style */
 .vue-slider-process {
-    /* background-color: #0f0; */
     border-radius: 15px;
 }
 
@@ -62,25 +61,27 @@ const sectionVal = computed(() => {
     visibility: hidden;
 }
 
-/* mark style */
 .vue-slider-mark {
     z-index: 4;
 }
+
 .vue-slider-mark:first-child .vue-slider-mark-step,
 .vue-slider-mark:last-child .vue-slider-mark-step {
     display: none;
 }
+
 .vue-slider-mark-step {
     width: 100%;
     height: 100%;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.16);
 }
+
 .vue-slider-mark-label {
     font-size: 14px;
     white-space: nowrap;
 }
-/* dot style */
+
 .vue-slider-dot-handle {
     cursor: pointer;
     width: 100%;
@@ -89,9 +90,6 @@ const sectionVal = computed(() => {
     background-color: #929497;
     box-sizing: border-box;
     box-shadow: 0.5px 0.5px 2px 1px rgba(0, 0, 0, 0.32);
-}
-.vue-slider-dot-handle-focus {
-    /* box-shadow: 0px 0px 1px 2px rgba(52, 152, 219, 0.36); */
 }
 
 .vue-slider-dot-handle-disabled {
@@ -111,10 +109,12 @@ const sectionVal = computed(() => {
     background-color: #3498db;
     box-sizing: content-box;
 }
+
 .vue-slider-dot-tooltip-inner::after {
     content: '';
     position: absolute;
 }
+
 .vue-slider-dot-tooltip-inner-top::after {
     top: 100%;
     left: 50%;
@@ -126,6 +126,7 @@ const sectionVal = computed(() => {
     border-width: 5px;
     border-top-color: inherit;
 }
+
 .vue-slider-dot-tooltip-inner-bottom::after {
     bottom: 100%;
     left: 50%;
@@ -137,6 +138,7 @@ const sectionVal = computed(() => {
     border-width: 5px;
     border-bottom-color: inherit;
 }
+
 .vue-slider-dot-tooltip-inner-left::after {
     left: 100%;
     top: 50%;
@@ -148,6 +150,7 @@ const sectionVal = computed(() => {
     border-width: 5px;
     border-left-color: inherit;
 }
+
 .vue-slider-dot-tooltip-inner-right::after {
     right: 100%;
     top: 50%;
@@ -167,6 +170,4 @@ const sectionVal = computed(() => {
 .vue-slider-dot-tooltip-wrapper-show {
     opacity: 1;
 }
-
-/*# sourceMappingURL=default.css.map */
 </style>
