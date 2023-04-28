@@ -4,12 +4,17 @@ import SunAnimation from './components/icons/SunAnimation.vue';
 import ManagementSvg from './components/management/MainSvg.vue';
 import MitigationSvg from './components/mitigation/MainSvg.vue';
 import MeasurementSvg from './components/measurement/MainSvg.vue';
+import VerticalSlider from './components/VerticalSlider.vue';
 
 const controlsStore = useControlsStore();
 </script>
 
 <template>
     {{ controlsStore.merp }}
+
+    <div class="h-[500px]">
+        <VerticalSlider />
+    </div>
 
     <MitigationSvg />
     <MeasurementSvg />
