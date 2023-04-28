@@ -6,7 +6,9 @@ const controlsStore = useControlsStore();
 </script>
 
 <template>
-    <div style="height: calc(100% - 70px)">
+    <div
+        @click="controlsStore.handleDefaultStateClick()"
+        style="height: calc(100% - 70px)">
         <VueSlider
             v-model="controlsStore.sliderValue"
             direction="ttb"

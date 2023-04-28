@@ -1,4 +1,5 @@
 import { defineStore } from 'pinia';
+import { nextTick } from 'vue';
 
 export const useControlsStore = defineStore('controls', {
     state: () => {
@@ -45,6 +46,13 @@ export const useControlsStore = defineStore('controls', {
             }
             this.selectedItem = item;
             this.selectSection(section, area, true);
+        },
+        async handleDefaultStateClick() {
+            if (this.defaultState) {
+                this.sliderValue = 50;
+                await nextTick();
+                this.sliderValue = 0;
+            }
         },
     },
     getters: {
