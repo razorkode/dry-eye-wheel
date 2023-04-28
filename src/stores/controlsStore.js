@@ -3,6 +3,7 @@ import { defineStore } from 'pinia';
 export const useControlsStore = defineStore('controls', {
     state: () => {
         return {
+            defaultState: true,
             selectedSection: null,
             selectedItem: null,
             sliderValue: 0,
@@ -15,6 +16,7 @@ export const useControlsStore = defineStore('controls', {
             this.sliderValue = 0;
         },
         selectArea(area, skipReset) {
+            this.defaultState = false;
             if (!skipReset) {
                 this.reset();
             }
@@ -29,6 +31,7 @@ export const useControlsStore = defineStore('controls', {
             }
         },
         selectSection(section, area, skipReset) {
+            this.defaultState = false;
             if (!skipReset) {
                 this.reset();
             }
@@ -36,6 +39,7 @@ export const useControlsStore = defineStore('controls', {
             this.selectArea(area, true);
         },
         selectItem(item, section, area, skipReset) {
+            this.defaultState = false;
             if (!skipReset) {
                 this.reset();
             }
@@ -44,7 +48,18 @@ export const useControlsStore = defineStore('controls', {
         },
     },
     getters: {
+        computedDefaultState(state) {
+            if (state.sliderValue !== 0) {
+                state.defaultState = false;
+                return false;
+            }
+
+            return state.defaultState;
+        },
         selectedArea(state) {
+            if (this.computedDefaultState) {
+                return null;
+            }
             if (state.sliderValue === 0) {
                 return 'mitigation';
             }
