@@ -59,7 +59,7 @@ const controlsStore = useControlsStore();
             </Card>
         </div>
 
-        <Card>
+        <Card title="Title">
             <template #icon>
                 <SunAnimation
                     targetId="sunAnim5"
