@@ -4,36 +4,20 @@ import { useControlsStore } from '../stores/controlsStore.js';
 import VueSlider from 'vue-slider-component';
 
 const controlsStore = useControlsStore();
-
-const verticalSliderVal = ref(0);
-
-watch(verticalSliderVal, (newValue) => {
-    if (newValue === 0) {
-        controlsStore.selectedSection = 'mitigation';
-    }
-    if (newValue === 50) {
-        controlsStore.selectedSection = 'measurement';
-    }
-    if (newValue === 100) {
-        controlsStore.selectedSection = 'management';
-    }
-});
 </script>
 
 <template>
-    <VueSlider
-        v-model="verticalSliderVal"
-        class="mx-20"
-        direction="ttb"
-        :dotSize="[30, 60]"
-        :hide-label="true"
-        :interval="50"
-        :marks="true"
-        tooltip="none"
-        style="display: inline-block; height: 100%" />
-
-    {{ verticalSliderVal }}
-    {{ controlsStore.selectedSection }}
+    <div style="height: calc(100% - 70px)">
+        <VueSlider
+            v-model="controlsStore.sliderValue"
+            direction="ttb"
+            :dotSize="[30, 60]"
+            :hide-label="true"
+            :interval="50"
+            :marks="true"
+            tooltip="none"
+            style="display: inline-block; height: 100%" />
+    </div>
 </template>
 
 <style lang="postcss">

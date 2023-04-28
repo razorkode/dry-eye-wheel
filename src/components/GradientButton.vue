@@ -8,7 +8,7 @@
 
 <style lang="postcss" scoped>
 .btn {
-    @apply rounded-full bg-gradient-to-r px-5 py-1;
+    @apply min-h-[40px] rounded-full bg-gradient-to-r px-5 py-1 leading-4;
 }
 
 .btn-area {

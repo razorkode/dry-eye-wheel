@@ -12,15 +12,26 @@ const controlsStore = useControlsStore();
 </script>
 
 <template>
-    <div class="m-6 flex max-w-lg flex-col gap-3">
-        <GradientButton class="btn-area"> Area Button </GradientButton>
-        <div class="grid grid-cols-2 gap-3">
-            <GradientButton class="btn-section"> Section Button </GradientButton>
-            <GradientButton class="btn-silver"> Silver Button </GradientButton>
+    <div class="m-6 flex h-[500px]">
+        <VerticalSlider />
+
+        <!-- Menu Buttons -->
+        <div class="mx-6 flex max-w-lg flex-col gap-3">
+            <GradientButton class="btn-area"> Area Button </GradientButton>
+            <div class="grid grid-cols-2 gap-3">
+                <GradientButton class="btn-section"> Section Button </GradientButton>
+                <GradientButton class="btn-silver"> Silver Button </GradientButton>
+            </div>
+            <div class="grid grid-cols-2 gap-3">
+                <GradientButton class="btn-orange"> Orange Button </GradientButton>
+                <GradientButton class="btn-yellow"> Yellow Button </GradientButton>
+            </div>
         </div>
-        <div class="grid grid-cols-2 gap-3">
-            <GradientButton class="btn-orange"> Orange Button </GradientButton>
-            <GradientButton class="btn-yellow"> Yellow Button </GradientButton>
+
+        <!-- Wheel Area -->
+        <div class="h-full w-full border-2 border-red-600">
+            {{ controlsStore.sliderValue }}
+            {{ controlsStore.selectedArea }}
         </div>
     </div>
 
@@ -33,10 +44,6 @@ const controlsStore = useControlsStore();
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusamus temporibus, ut facilis quasi nisi
         nemo? Eius at temporibus sit asperiores, numquam incidunt dicta, ratione dolorem ut ea odit obcaecati.
     </Popup>
-
-    <div class="h-[500px]">
-        <VerticalSlider />
-    </div>
 
     <MitigationSvg />
     <MeasurementSvg />

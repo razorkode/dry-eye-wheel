@@ -5,7 +5,7 @@
         <div class="text-center">
             <slot name="icon"></slot>
         </div>
-        <div class="font-euclid-circular-bold text-center text-4xl text-indigo-600">TITLE</div>
+        <div class="text-center font-euclid-circular-bold text-4xl text-[#2B398F]">TITLE</div>
         <div class="text-center text-gray-600">
             <slot></slot>
         </div>
