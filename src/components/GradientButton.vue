@@ -8,13 +8,16 @@
 
 <style lang="postcss" scoped>
 .btn {
-    @apply min-h-[40px] rounded-full bg-gradient-to-r px-5 py-1 leading-4;
+    @apply min-h-[40px] rounded-full bg-gradient-to-r px-3 py-1 leading-4;
 }
 
 .btn-area {
     @apply w-full font-euclid-circular-bold uppercase;
     @apply from-[#E6E6E7] via-white to-[#E5E6E7] text-[#2B398F];
     @apply hover:from-[#2B398F] hover:via-[#2B398F] hover:to-[#2B398F] hover:text-white;
+    &.active {
+        @apply from-[#2B398F] via-[#2B398F] to-[#2B398F] text-white;
+    }
 }
 
 .btn-section {

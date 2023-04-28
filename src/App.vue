@@ -1,62 +1,82 @@
 <script setup>
 import { useControlsStore } from './stores/controlsStore.js';
 import SunAnimation from './components/icons/SunAnimation.vue';
-import ManagementSvg from './components/management/MainSvg.vue';
-import MitigationSvg from './components/mitigation/MainSvg.vue';
-import MeasurementSvg from './components/measurement/MainSvg.vue';
+import ManagementSvg from './components/wheel/management/MainSvg.vue';
+import MitigationSvg from './components/wheel/mitigation/MainSvg.vue';
+import MeasurementSvg from './components/wheel/measurement/MainSvg.vue';
 import VerticalSlider from './components/VerticalSlider.vue';
-import Popup from './components/Popup.vue';
-import GradientButton from './components/GradientButton.vue';
+import Card from './components/Card.vue';
+import ButtonMenu from './components/layout/ButtonMenu.vue';
 
 const controlsStore = useControlsStore();
 </script>
 
 <template>
-    <div class="m-6 flex h-[500px]">
-        <VerticalSlider />
+    <div class="p-6">
+        <div class="flex h-[500px]">
+            <VerticalSlider />
+            <ButtonMenu />
 
-        <!-- Menu Buttons -->
-        <div class="mx-6 flex max-w-lg flex-col gap-3">
-            <GradientButton class="btn-area"> Area Button </GradientButton>
-            <div class="grid grid-cols-2 gap-3">
-                <GradientButton class="btn-section"> Section Button </GradientButton>
-                <GradientButton class="btn-silver"> Silver Button </GradientButton>
-            </div>
-            <div class="grid grid-cols-2 gap-3">
-                <GradientButton class="btn-orange"> Orange Button </GradientButton>
-                <GradientButton class="btn-yellow"> Yellow Button </GradientButton>
+            <!-- Wheel Area -->
+            <div class="h-full w-full border-2 border-red-600">
+                {{ controlsStore.sliderValue }}
+                {{ controlsStore.selectedArea }}
             </div>
         </div>
 
-        <!-- Wheel Area -->
-        <div class="h-full w-full border-2 border-red-600">
-            {{ controlsStore.sliderValue }}
-            {{ controlsStore.selectedArea }}
+        <div class="my-5 grid grid-cols-12 gap-5">
+            <Card
+                title="The Wheel"
+                theme="card"
+                class="col-span-5 max-w-none">
+                Dry eye is a chronic condition that will require you to work with your patient to manage it. The wheel
+                symbolises the process of mitigating, measuring and using that information to inform your management
+                approach. When your patient returns for review, you will gather the information again to understand what
+                or how it has changed and how this may inform further mitigation, measurement and refine your management
+                approach.
+            </Card>
+
+            <Card
+                title="The Rings"
+                theme="card"
+                class="col-span-7 max-w-none">
+                <div>
+                    The rings shown in the Dry Eye Wheel symbolise the simplest through to more complex approaches for
+                    mitigation, measurement, and management of dry eye, according to severity.
+                </div>
+                <div>
+                    There is plenty you can do to ease the discomfort of dry eye patients through mitigation,
+                    measurement and management, even with no additional investment (bronze outer ring) or limited
+                    investment (silver middle ring). As the majority of patients with dry eye disease have mild to
+                    moderate disease, all practitioners need to get involved, referring to specialist centres when
+                    needed.
+                </div>
+            </Card>
         </div>
+
+        <Card>
+            <template #icon>
+                <SunAnimation
+                    targetId="sunAnim5"
+                    class="!h-32" />
+            </template>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusamus temporibus, ut facilis quasi
+            nisi nemo? Eius at temporibus sit asperiores, numquam incidunt dicta, ratione dolorem ut ea odit obcaecati.
+        </Card>
+
+        <MitigationSvg />
+        <MeasurementSvg />
+        <ManagementSvg />
+
+        <table>
+            <tr>
+                <td><SunAnimation targetId="sunAnim1" /></td>
+                <td><SunAnimation targetId="sunAnim2" /></td>
+            </tr>
+            <tr>
+                <td><SunAnimation targetId="sunAnim3" /></td>
+                <td><SunAnimation targetId="sunAnim4" /></td>
+            </tr>
+        </table>
     </div>
-
-    <Popup>
-        <template #icon>
-            <SunAnimation
-                targetId="sunAnim5"
-                class="!h-32" />
-        </template>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusamus temporibus, ut facilis quasi nisi
-        nemo? Eius at temporibus sit asperiores, numquam incidunt dicta, ratione dolorem ut ea odit obcaecati.
-    </Popup>
-
-    <MitigationSvg />
-    <MeasurementSvg />
-    <ManagementSvg />
-
-    <table>
-        <tr>
-            <td><SunAnimation targetId="sunAnim1" /></td>
-            <td><SunAnimation targetId="sunAnim2" /></td>
-        </tr>
-        <tr>
-            <td><SunAnimation targetId="sunAnim3" /></td>
-            <td><SunAnimation targetId="sunAnim4" /></td>
-        </tr>
-    </table>
 </template>

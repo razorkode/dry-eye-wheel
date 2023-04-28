@@ -1,5 +1,4 @@
 <script setup>
-import { ref, computed, watch } from 'vue';
 import { useControlsStore } from '../stores/controlsStore.js';
 import VueSlider from 'vue-slider-component';
 
