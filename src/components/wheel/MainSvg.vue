@@ -13,21 +13,21 @@ const controlsStore = useControlsStore();
         <MitigationSvg
             :class="{
                 active: controlsStore.selectedArea === 'mitigation',
-                grayscale: controlsStore.selectedArea !== 'mitigation',
+                grayscale: controlsStore.selectedArea === 'measurement' || controlsStore.selectedArea === 'management',
             }"
             class="mitigation-svg absolute max-h-[640px] w-full transition-all duration-300" />
 
         <MeasurementSvg
             :class="{
                 active: controlsStore.selectedArea === 'measurement',
-                grayscale: controlsStore.selectedArea !== 'measurement',
+                grayscale: controlsStore.selectedArea === 'mitigation' || controlsStore.selectedArea === 'management',
             }"
             class="measurement-svg absolute max-h-[640px] w-full transition-all duration-300" />
 
         <ManagementSvg
             :class="{
                 active: controlsStore.selectedArea === 'management',
-                grayscale: controlsStore.selectedArea !== 'management',
+                grayscale: controlsStore.selectedArea === 'mitigation' || controlsStore.selectedArea === 'measurement',
             }"
             class="management-svg absolute max-h-[640px] w-full" />
     </div>
