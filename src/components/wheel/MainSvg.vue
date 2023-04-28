@@ -32,21 +32,21 @@ onMounted(() => {
                     active: controlsStore.selectedArea === 'mitigation',
                     grayscale: controlsStore.selectedArea !== 'mitigation',
                 }"
-                class="mitigation-svg absolute max-h-[500px] w-full transition-all duration-300" />
+                class="mitigation-svg absolute max-h-[700px] w-full transition-all duration-300" />
 
             <MeasurementSvg
                 :class="{
                     active: controlsStore.selectedArea === 'measurement',
                     grayscale: controlsStore.selectedArea !== 'measurement',
                 }"
-                class="measurement-svg absolute max-h-[500px] w-full transition-all duration-300" />
+                class="measurement-svg absolute max-h-[700px] w-full transition-all duration-300" />
 
             <ManagementSvg
                 :class="{
                     active: controlsStore.selectedArea === 'management',
                     grayscale: controlsStore.selectedArea !== 'management',
                 }"
-                class="management-svg absolute max-h-[500px] w-full" />
+                class="management-svg absolute max-h-[700px] w-full" />
         </div>
     </div>
 </template>
