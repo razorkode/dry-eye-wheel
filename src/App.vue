@@ -12,7 +12,17 @@ const controlsStore = useControlsStore();
 </script>
 
 <template>
-    <GradientButton />
+    <div class="m-6 flex max-w-lg flex-col gap-3">
+        <GradientButton class="btn-area"> Area Button </GradientButton>
+        <div class="grid grid-cols-2 gap-3">
+            <GradientButton class="btn-section"> Section Button </GradientButton>
+            <GradientButton class="btn-silver"> Silver Button </GradientButton>
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+            <GradientButton class="btn-orange"> Orange Button </GradientButton>
+            <GradientButton class="btn-yellow"> Yellow Button </GradientButton>
+        </div>
+    </div>
 
     <Popup>
         <template #icon>
