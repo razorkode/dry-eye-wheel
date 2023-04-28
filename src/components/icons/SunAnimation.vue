@@ -1,5 +1,6 @@
 <script setup>
-import LottieAnimation from 'lottie-vuejs/src/LottieAnimation.vue';
+import LottieAnimation from '../../lib/LottieAnimation.vue';
+import SunJson from '../../assets/json/sun.json';
 
 const props = defineProps({
     targetId: {
@@ -11,7 +12,7 @@ const props = defineProps({
 
 <template>
     <LottieAnimation
-        path="./sun.json"
+        :json="SunJson"
         :loop="true"
         :autoPlay="true"
         :width="256"

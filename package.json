@@ -7,19 +7,17 @@
         "build": "vite build",
         "preview": "vite preview"
     },
-    "dependencies": {
-        "lottie-vuejs": "^0.4.0",
-        "pinia": "^2.0.35",
-        "vue": "^3.2.47"
-    },
     "devDependencies": {
         "@vitejs/plugin-vue": "^4.1.0",
         "autoprefixer": "^10.4.14",
         "axios": "^1.4.0",
+        "lottie-vuejs": "^0.4.0",
+        "pinia": "^2.0.35",
         "postcss": "^8.4.23",
         "prettier": "^2.8.8",
         "prettier-plugin-tailwindcss": "^0.2.7",
         "tailwindcss": "^3.3.2",
-        "vite": "^4.2.0"
+        "vite": "^4.2.0",
+        "vue": "^3.2.47"
     }
 }
