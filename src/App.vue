@@ -6,11 +6,14 @@ import MitigationSvg from './components/mitigation/MainSvg.vue';
 import MeasurementSvg from './components/measurement/MainSvg.vue';
 import VerticalSlider from './components/VerticalSlider.vue';
 import Popup from './components/Popup.vue';
+import GradientButton from './components/GradientButton.vue';
 
 const controlsStore = useControlsStore();
 </script>
 
 <template>
+    <GradientButton />
+
     <Popup>
         <template #icon>
             <SunAnimation
