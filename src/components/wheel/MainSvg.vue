@@ -14,8 +14,8 @@ const setContainerSize = () => {
     const width = firstSvg.clientWidth || firstSvg.getBoundingClientRect().width;
     const height = firstSvg.clientHeight || firstSvg.getBoundingClientRect().height;
 
-    container.style.width = `${width - 80}px`;
-    container.style.height = `${height - 80}px`;
+    container.style.width = `${width}px`;
+    container.style.height = `${height}px`;
 };
 
 onMounted(() => {
@@ -32,21 +32,21 @@ onMounted(() => {
                     active: controlsStore.selectedArea === 'mitigation',
                     grayscale: controlsStore.selectedArea !== 'mitigation',
                 }"
-                class="mitigation-svg absolute max-h-[700px] w-full transition-all duration-300" />
+                class="mitigation-svg absolute max-h-[640px] w-full transition-all duration-300" />
 
             <MeasurementSvg
                 :class="{
                     active: controlsStore.selectedArea === 'measurement',
                     grayscale: controlsStore.selectedArea !== 'measurement',
                 }"
-                class="measurement-svg absolute max-h-[700px] w-full transition-all duration-300" />
+                class="measurement-svg absolute max-h-[640px] w-full transition-all duration-300" />
 
             <ManagementSvg
                 :class="{
                     active: controlsStore.selectedArea === 'management',
                     grayscale: controlsStore.selectedArea !== 'management',
                 }"
-                class="management-svg absolute max-h-[700px] w-full" />
+                class="management-svg absolute max-h-[640px] w-full" />
         </div>
     </div>
 </template>

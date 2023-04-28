@@ -11,7 +11,7 @@ const controlsStore = useControlsStore();
 
 <template>
     <div class="p-6">
-        <div class="flex h-[700px]">
+        <div class="flex h-[640px]">
             <VerticalSlider />
             <ButtonMenu />
 

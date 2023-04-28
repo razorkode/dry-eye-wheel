@@ -19,7 +19,7 @@ import ProphylaxisIcon from './yellow/ProphylaxisIcon.vue';
         data-name="Layer 1"
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
-        viewBox="-100 -100 1100 1100">
+        viewBox="-60 -60 1000 1000">
         <linearGradient
             id="New_Gradient_Swatch_3"
             data-name="New Gradient Swatch 3"
