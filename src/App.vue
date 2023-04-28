@@ -16,7 +16,7 @@ const controlsStore = useControlsStore();
             <ButtonMenu />
 
             <!-- Wheel Area -->
-            <div class="h-full w-full border-2 border-red-600">
+            <div class="h-full w-full rounded-lg border-2">
                 <WheelSvg />
 
                 <div
