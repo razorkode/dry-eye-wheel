@@ -3,6 +3,20 @@
 @tailwind utilities;
 
 @font-face {
+    font-family: EuclidCircularA-Regular;
+    src: url(/src/assets/fonts/EuclidCircularA-Regular.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: EuclidCircularA-Medium;
+    src: url(/src/assets/fonts/EuclidCircularA-Medium.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: EuclidCircularA-SemiBold;
     src: url(/src/assets/fonts/EuclidCircularA-Bold.woff) format('woff');
     font-weight: normal;
@@ -16,12 +30,26 @@
     font-style: normal;
 }
 
+*,
+html,
+body {
+    font-family: 'EuclidCircularA-Regular', sans-serif;
+}
+
 .wheel-svg {
     text-transform: uppercase;
-    font-family: 'EuclidCircularA-SemiBold';
+    font-family: 'EuclidCircularA-SemiBold', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -ms-font-smoothing: antialiased;
+}
+
+.font-euclid-circular-regular {
+    font-family: 'EuclidCircularA-Regular', sans-serif;
+}
+
+.font-euclid-circular-medium {
+    font-family: 'EuclidCircularA-Medium', sans-serif;
 }
 
 .font-euclid-circular-semibold {

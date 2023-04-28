@@ -14,7 +14,5 @@ const props = defineProps({
     <LottieAnimation
         :json="SunJson"
         :loop="true"
-        :autoPlay="true"
-        :width="256"
-        :height="256" />
+        :autoPlay="true" />
 </template>
