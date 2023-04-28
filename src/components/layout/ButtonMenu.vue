@@ -52,12 +52,28 @@ const controlsStore = useControlsStore();
                 <GradientButton class="btn-section"> Sub-Classification </GradientButton>
             </div>
             <div class="grid grid-cols-2 gap-3">
-                <GradientButton class="btn-orange"> Orange Button </GradientButton>
-                <GradientButton class="btn-yellow"> Yellow Button </GradientButton>
+                <GradientButton class="btn-orange"> Comfort Time After Blink Test </GradientButton>
+                <GradientButton class="btn-orange"> Blink Rate & Completeness </GradientButton>
             </div>
-            <div class="mb-6 grid grid-cols-2 gap-3">
-                <GradientButton class="btn-silver"> Silver Button </GradientButton>
-                <GradientButton class="btn-silver"> Silver Button </GradientButton>
+            <div class="grid grid-cols-2 gap-3">
+                <GradientButton class="btn-orange"> Validated Questionnaire </GradientButton>
+                <GradientButton class="btn-silver"> Tear Meniscus Height </GradientButton>
+            </div>
+            <div class="grid grid-cols-2 gap-3">
+                <GradientButton class="btn-silver"> Fluorescein Staining </GradientButton>
+                <GradientButton class="btn-silver"> Meibomian Gland Expression </GradientButton>
+            </div>
+            <div class="grid grid-cols-2 gap-3">
+                <GradientButton class="btn-silver"> Non-Invasive Breakup Time </GradientButton>
+                <GradientButton class="btn-yellow"> Tear Meniscus Height </GradientButton>
+            </div>
+            <div class="grid grid-cols-2 gap-3">
+                <GradientButton class="btn-silver"> Osmolarity </GradientButton>
+                <div>&nbsp;</div>
+            </div>
+            <div class="grid grid-cols-2 gap-3">
+                <GradientButton class="btn-yellow"> Lissamine Green Staining </GradientButton>
+                <div>&nbsp;</div>
             </div>
         </template>
 
@@ -68,12 +84,24 @@ const controlsStore = useControlsStore();
             Management
         </GradientButton>
         <div class="grid grid-cols-2 gap-3">
-            <GradientButton class="btn-orange"> Orange Button </GradientButton>
-            <GradientButton class="btn-yellow"> Yellow Button </GradientButton>
+            <GradientButton class="btn-orange"> Lid Wipes </GradientButton>
+            <GradientButton class="btn-orange"> Warm Compress </GradientButton>
         </div>
         <div class="grid grid-cols-2 gap-3">
-            <GradientButton class="btn-silver"> Silver Button </GradientButton>
-            <GradientButton class="btn-silver"> Silver Button </GradientButton>
+            <GradientButton class="btn-orange"> Blink Exercises </GradientButton>
+            <GradientButton class="btn-orange"> Advice </GradientButton>
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+            <GradientButton class="btn-orange"> Artificial Tears </GradientButton>
+            <GradientButton class="btn-silver"> Scleral Lenses </GradientButton>
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+            <GradientButton class="btn-silver"> Pharma-ceuticals </GradientButton>
+            <GradientButton class="btn-silver"> Intense Pulsed Light Therapy </GradientButton>
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+            <GradientButton class="btn-yellow"> Punctal Plugs </GradientButton>
+            <div>&nbsp;</div>
         </div>
     </div>
 </template>
