@@ -19,8 +19,13 @@ const controlsStore = useControlsStore();
 
             <!-- Wheel Area -->
             <div class="h-full w-full border-2 border-red-600">
-                {{ controlsStore.sliderValue }}
-                {{ controlsStore.selectedArea }}
+                Slider Value: {{ controlsStore.sliderValue }}
+                <br />
+                Selected Area: {{ controlsStore.selectedArea }}
+                <br />
+                Selected Section: {{ controlsStore.selectedSection }}
+                <br />
+                Selected Item: {{ controlsStore.selectedItem }}
             </div>
         </div>
 

@@ -3,10 +3,45 @@ import { defineStore } from 'pinia';
 export const useControlsStore = defineStore('controls', {
     state: () => {
         return {
-            selectedArea: 'mitigation',
             selectedSection: null,
+            selectedItem: null,
             sliderValue: 0,
         };
+    },
+    actions: {
+        reset() {
+            this.selectedSection = null;
+            this.selectedItem = null;
+            this.sliderValue = 0;
+        },
+        selectArea(area, skipReset) {
+            if (!skipReset) {
+                this.reset();
+            }
+            if (area === 'mitigation') {
+                this.sliderValue = 0;
+            }
+            if (area === 'measurement') {
+                this.sliderValue = 50;
+            }
+            if (area === 'management') {
+                this.sliderValue = 100;
+            }
+        },
+        selectSection(section, area, skipReset) {
+            if (!skipReset) {
+                this.reset();
+            }
+            this.selectedSection = section;
+            this.selectArea(area, true);
+        },
+        selectItem(item, section, area, skipReset) {
+            if (!skipReset) {
+                this.reset();
+            }
+            this.selectedItem = item;
+            this.selectSection(section, area, true);
+        },
     },
     getters: {
         selectedArea(state) {
