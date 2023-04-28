@@ -6,48 +6,30 @@ import MitigationSvg from './mitigation/MainSvg.vue';
 import MeasurementSvg from './measurement/MainSvg.vue';
 
 const controlsStore = useControlsStore();
-
-const setContainerSize = () => {
-    const container = document.querySelector('.container');
-    const firstSvg = container.querySelector('.mitigation-svg');
-
-    const width = firstSvg.clientWidth || firstSvg.getBoundingClientRect().width;
-    const height = firstSvg.clientHeight || firstSvg.getBoundingClientRect().height;
-
-    container.style.width = `${width}px`;
-    container.style.height = `${height}px`;
-};
-
-onMounted(() => {
-    setContainerSize();
-    window.addEventListener('resize', setContainerSize);
-});
 </script>
 
 <template>
     <div class="relative">
-        <div class="container">
-            <MitigationSvg
-                :class="{
-                    active: controlsStore.selectedArea === 'mitigation',
-                    grayscale: controlsStore.selectedArea !== 'mitigation',
-                }"
-                class="mitigation-svg absolute max-h-[640px] w-full transition-all duration-300" />
+        <MitigationSvg
+            :class="{
+                active: controlsStore.selectedArea === 'mitigation',
+                grayscale: controlsStore.selectedArea !== 'mitigation',
+            }"
+            class="mitigation-svg absolute max-h-[640px] w-full transition-all duration-300" />
 
-            <MeasurementSvg
-                :class="{
-                    active: controlsStore.selectedArea === 'measurement',
-                    grayscale: controlsStore.selectedArea !== 'measurement',
-                }"
-                class="measurement-svg absolute max-h-[640px] w-full transition-all duration-300" />
+        <MeasurementSvg
+            :class="{
+                active: controlsStore.selectedArea === 'measurement',
+                grayscale: controlsStore.selectedArea !== 'measurement',
+            }"
+            class="measurement-svg absolute max-h-[640px] w-full transition-all duration-300" />
 
-            <ManagementSvg
-                :class="{
-                    active: controlsStore.selectedArea === 'management',
-                    grayscale: controlsStore.selectedArea !== 'management',
-                }"
-                class="management-svg absolute max-h-[640px] w-full" />
-        </div>
+        <ManagementSvg
+            :class="{
+                active: controlsStore.selectedArea === 'management',
+                grayscale: controlsStore.selectedArea !== 'management',
+            }"
+            class="management-svg absolute max-h-[640px] w-full" />
     </div>
 </template>
 
