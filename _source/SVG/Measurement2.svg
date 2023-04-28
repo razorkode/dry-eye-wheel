@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 660.48 804.37">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-dasharray: 0 0 5.03 5.03;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        fill: #a6a8ac;
+        font-family: EuclidCircularA-Bold, 'Euclid Circular A';
+        font-size: 56.46px;
+        font-weight: 700;
+      }
+
+      .cls-4 {
+        fill: url(#New_Gradient_Swatch_3);
+      }
+
+      .cls-5 {
+        fill: url(#New_Gradient_Swatch_1);
+      }
+
+      .cls-6 {
+        fill: url(#New_Gradient_Swatch_4);
+      }
+    </style>
+    <linearGradient id="New_Gradient_Swatch_3" data-name="New Gradient Swatch 3" x1="150.21" y1="539.35" x2="443.73" y2="245.83" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9f6d29"/>
+      <stop offset=".03" stop-color="#a56f28"/>
+      <stop offset=".15" stop-color="#bf7927"/>
+      <stop offset=".27" stop-color="#d28125"/>
+      <stop offset=".4" stop-color="#de8525"/>
+      <stop offset=".53" stop-color="#e28725"/>
+      <stop offset="1" stop-color="#9f6d29"/>
+    </linearGradient>
+    <linearGradient id="New_Gradient_Swatch_1" data-name="New Gradient Swatch 1" x1="129.27" y1="556.63" x2="321.49" y2="364.41" gradientTransform="translate(6.14 -27.2) rotate(1.44)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#808185"/>
+      <stop offset=".02" stop-color="#86878b"/>
+      <stop offset=".11" stop-color="#a8a9ac"/>
+      <stop offset=".21" stop-color="#c2c3c5"/>
+      <stop offset=".32" stop-color="#d5d6d8"/>
+      <stop offset=".42" stop-color="#e1e2e3"/>
+      <stop offset=".53" stop-color="#e5e6e7"/>
+      <stop offset="1" stop-color="#808185"/>
+    </linearGradient>
+    <linearGradient id="New_Gradient_Swatch_4" data-name="New Gradient Swatch 4" x1="119.64" y1="520.33" x2="206.42" y2="433.55" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b68c2e"/>
+      <stop offset=".1" stop-color="#c99b28"/>
+      <stop offset=".24" stop-color="#dbaa23"/>
+      <stop offset=".38" stop-color="#e7b320"/>
+      <stop offset=".53" stop-color="#ebb61f"/>
+      <stop offset="1" stop-color="#b68c2e"/>
+    </linearGradient>
+  </defs>
+  <path class="cls-4" d="m109.97,242.16l68.86,60.41-67.51,74.55-1.56,121.78,361.65,213.05c36.8-61.67,57.91-133.53,57.91-210.26,0-228.96-187.97-414.63-420.06-415.2l.71,155.66Z"/>
+  <path class="cls-5" d="m109.73,250.73l59.9,60.32-62.24,56.34-.12,133.22,107.86,70.06,17.23,78.58,80.39-31.07,23.02,15.05c23.75-38.19,29.21-76.84,30.42-124.87,3.66-145.44-108.69-265.94-256.2-269.65-.05,0,.05,0,0,0l-.25,12.02Z"/>
+  <path class="cls-6" d="m106.77,387.59l-1.52,118.36,109.88,64.73c10.37-18.06,16.3-38.92,16.3-61.15,0-67.5-54.58-122.42-122.6-124.22l-2.07,2.28Z"/>
+  <g>
+    <line class="cls-2" x1="105.25" y1="505.94" x2="107.39" y2="504.65"/>
+    <line class="cls-1" x1="111.69" y1="502.03" x2="462.12" y2="289"/>
+    <line class="cls-2" x1="464.27" y1="287.69" x2="466.4" y2="286.39"/>
+  </g>
+  <text class="cls-3" transform="translate(-597.67 1467.94) rotate(23.11)"><tspan x="0" y="0">M</tspan></text>
+  <text class="cls-3" transform="translate(-545.2 1489.7) rotate(16.84)"><tspan x="0" y="0">A</tspan></text>
+  <text class="cls-3" transform="translate(-498.09 1503.65) rotate(10.86)"><tspan x="0" y="0">N</tspan></text>
+  <text class="cls-3" transform="translate(-447.41 1512.94) rotate(4.87)"><tspan x="0" y="0">A</tspan></text>
+  <text class="cls-3" transform="translate(-400.32 1516.78) rotate(-.91)"><tspan x="0" y="0">G</tspan></text>
+  <text class="cls-3" transform="translate(-348.56 1515.34) rotate(-6.24)"><tspan x="0" y="0">E</tspan></text>
+  <text class="cls-3" transform="translate(-310.17 1511.26) rotate(-11.75)"><tspan x="0" y="0">M</tspan></text>
+  <text class="cls-3" transform="translate(-254.97 1499.01) rotate(-17.34)"><tspan x="0" y="0">E</tspan></text>
+  <text class="cls-3" transform="translate(-218 1487.46) rotate(-22.66)"><tspan x="0" y="0">N</tspan></text>
+  <text class="cls-3" transform="translate(-170.96 1467.17) rotate(-28.01)"><tspan x="0" y="0">T</tspan></text>
+</svg>

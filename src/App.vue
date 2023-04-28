@@ -1,10 +1,14 @@
 <script setup>
-import SunAnimation from './components/icons/SunAnimation.vue';
-import WheelSvg from './components/WheelSvg.vue';
+// import SunAnimation from './components/icons/SunAnimation.vue';
+import ManagementSvg from './components/ManagementSvg.vue';
+import MitigationSvg from './components/MitigationSvg.vue';
+import MeasurementSvg from './components/MeasurementSvg.vue';
 </script>
 
 <template>
-    <WheelSvg />
+    <MitigationSvg />
+    <MeasurementSvg />
+    <ManagementSvg />
 
     <table>
         <tr>
