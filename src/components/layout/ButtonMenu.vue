@@ -8,7 +8,7 @@ const controlsStore = useControlsStore();
 <template>
     <div class="mx-6 flex min-w-[360px] max-w-full flex-col gap-3 overflow-y-hidden p-[3px]">
         <!-- Mitigation -->
-        <template v-if="controlsStore.selectedArea === 'mitigation' || controlsStore.computedDefaultState">
+        <template v-if="controlsStore.selectedArea === 'mitigation' || controlsStore.defaultState">
             <GradientButton
                 @click="controlsStore.selectArea('mitigation')"
                 :class="{ active: controlsStore.selectedArea === 'mitigation' }"
@@ -96,7 +96,7 @@ const controlsStore = useControlsStore();
             v-if="
                 controlsStore.selectedArea === 'mitigation' ||
                 controlsStore.selectedArea === 'measurement' ||
-                controlsStore.computedDefaultState
+                controlsStore.defaultState
             ">
             <GradientButton
                 @click="controlsStore.selectArea('measurement')"

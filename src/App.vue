@@ -24,7 +24,7 @@ const controlsStore = useControlsStore();
                     <table>
                         <tr>
                             <td class="pr-2 text-gray-300">Default State</td>
-                            <td>{{ !!controlsStore.computedDefaultState }}</td>
+                            <td>{{ !!controlsStore.defaultState }}</td>
                         </tr>
                         <tr>
                             <td class="pr-2 text-gray-300">Slider</td>
