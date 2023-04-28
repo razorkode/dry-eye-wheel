@@ -17,13 +17,29 @@ const controlsStore = useControlsStore();
 
             <!-- Wheel Area -->
             <div class="h-full w-full border-2 border-red-600">
-                Slider Value: {{ controlsStore.sliderValue }}
-                <br />
-                Selected Area: {{ controlsStore.selectedArea }}
-                <br />
-                Selected Section: {{ controlsStore.selectedSection }}
-                <br />
-                Selected Item: {{ controlsStore.selectedItem }}
+                <WheelSvg />
+
+                <div
+                    class="absolute right-2 top-1 rounded-lg bg-slate-950 bg-opacity-60 px-5 py-3 font-mono text-sm leading-5 text-white">
+                    <table>
+                        <tr>
+                            <td class="pr-2 text-gray-300">Slider</td>
+                            <td>{{ controlsStore.sliderValue }}</td>
+                        </tr>
+                        <tr>
+                            <td class="pr-2 text-gray-300">Area</td>
+                            <td>{{ controlsStore.selectedArea }}</td>
+                        </tr>
+                        <tr>
+                            <td class="pr-2 text-gray-300">Section</td>
+                            <td>{{ controlsStore.selectedSection }}</td>
+                        </tr>
+                        <tr>
+                            <td class="pr-2 text-gray-300">Item</td>
+                            <td>{{ controlsStore.selectedItem }}</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
 
@@ -66,8 +82,6 @@ const controlsStore = useControlsStore();
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusamus temporibus, ut facilis quasi
             nisi nemo? Eius at temporibus sit asperiores, numquam incidunt dicta, ratione dolorem ut ea odit obcaecati.
         </Card>
-
-        <WheelSvg />
 
         <table>
             <tr>

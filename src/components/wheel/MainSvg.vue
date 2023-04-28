@@ -24,9 +24,9 @@ onMounted(() => {
 <template>
     <div class="relative">
         <div class="container">
-            <MitigationSvg class="first-svg absolute" />
-            <MeasurementSvg class="absolute" />
-            <ManagementSvg class="absolute" />
+            <MitigationSvg class="first-svg absolute max-h-[500px]" />
+            <MeasurementSvg class="absolute max-h-[500px]" />
+            <ManagementSvg class="absolute max-h-[500px]" />
         </div>
     </div>
 </template>
