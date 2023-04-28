@@ -6,7 +6,7 @@ const controlsStore = useControlsStore();
 </script>
 
 <template>
-    <div class="mx-6 flex w-[440px] max-w-full flex-col gap-3 overflow-y-hidden p-[3px]">
+    <div class="mx-6 flex min-w-[360px] max-w-full flex-col gap-3 overflow-y-hidden p-[3px]">
         <!-- Mitigation -->
         <template v-if="controlsStore.selectedArea === 'mitigation'">
             <GradientButton
