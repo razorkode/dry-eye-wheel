@@ -10,8 +10,6 @@ const controlsStore = useControlsStore();
 </script>
 
 <template>
-    {{ controlsStore.merp }}
-
     <div class="h-[500px]">
         <VerticalSlider />
     </div>
