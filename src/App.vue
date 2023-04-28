@@ -1,9 +1,7 @@
 <script setup>
 import { useControlsStore } from './stores/controlsStore.js';
 import SunAnimation from './components/icons/SunAnimation.vue';
-import ManagementSvg from './components/wheel/management/MainSvg.vue';
-import MitigationSvg from './components/wheel/mitigation/MainSvg.vue';
-import MeasurementSvg from './components/wheel/measurement/MainSvg.vue';
+import WheelSvg from './components/wheel/MainSvg.vue';
 import VerticalSlider from './components/VerticalSlider.vue';
 import Card from './components/Card.vue';
 import ButtonMenu from './components/layout/ButtonMenu.vue';
@@ -69,9 +67,7 @@ const controlsStore = useControlsStore();
             nisi nemo? Eius at temporibus sit asperiores, numquam incidunt dicta, ratione dolorem ut ea odit obcaecati.
         </Card>
 
-        <MitigationSvg />
-        <MeasurementSvg />
-        <ManagementSvg />
+        <WheelSvg />
 
         <table>
             <tr>
