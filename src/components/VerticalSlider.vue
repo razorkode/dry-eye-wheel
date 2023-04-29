@@ -1,5 +1,5 @@
 <script setup>
-import { useControlsStore } from '../stores/controlsStore.js';
+import { useControlsStore } from '@/stores/controlsStore.js';
 import VueSlider from 'vue-slider-component';
 
 const controlsStore = useControlsStore();

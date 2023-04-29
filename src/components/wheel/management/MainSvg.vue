@@ -1,4 +1,8 @@
-<script setup></script>
+<script setup>
+import { useControlsStore } from '@/stores/controlsStore.js';
+
+const controlsStore = useControlsStore();
+</script>
 
 <template>
     <svg
@@ -7,96 +11,98 @@
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
         viewBox="-60 -60 1000 1000">
-        <linearGradient
-            id="New_Gradient_Swatch_3"
-            data-name="New Gradient Swatch 3"
-            x1="272.05"
-            y1="800.76"
-            x2="823.84"
-            y2="225.21"
-            gradientUnits="userSpaceOnUse">
-            <stop
-                offset="0"
-                stop-color="#9f6d29" />
-            <stop
-                offset=".03"
-                stop-color="#a56f28" />
-            <stop
-                offset=".15"
-                stop-color="#bf7927" />
-            <stop
-                offset=".27"
-                stop-color="#d28125" />
-            <stop
-                offset=".4"
-                stop-color="#de8525" />
-            <stop
-                offset=".53"
-                stop-color="#e28725" />
-            <stop
-                offset="1"
-                stop-color="#9f6d29" />
-        </linearGradient>
-        <linearGradient
-            id="New_Gradient_Swatch_1"
-            data-name="New Gradient Swatch 1"
-            x1="328.96"
-            y1="644.68"
-            x2="653.7"
-            y2="271.1"
-            gradientUnits="userSpaceOnUse">
-            <stop
-                offset="0"
-                stop-color="#808185" />
-            <stop
-                offset=".02"
-                stop-color="#86878b" />
-            <stop
-                offset=".11"
-                stop-color="#a8a9ac" />
-            <stop
-                offset=".21"
-                stop-color="#c2c3c5" />
-            <stop
-                offset=".32"
-                stop-color="#d5d6d8" />
-            <stop
-                offset=".42"
-                stop-color="#e1e2e3" />
-            <stop
-                offset=".53"
-                stop-color="#e5e6e7" />
-            <stop
-                offset="1"
-                stop-color="#808185" />
-        </linearGradient>
-        <linearGradient
-            id="New_Gradient_Swatch_4"
-            data-name="New Gradient Swatch 4"
-            x1="387.89"
-            y1="523.96"
-            x2="547.62"
-            y2="358.95"
-            gradientUnits="userSpaceOnUse">
-            <stop
-                offset="0"
-                stop-color="#b68c2e" />
-            <stop
-                offset=".1"
-                stop-color="#c99b28" />
-            <stop
-                offset=".24"
-                stop-color="#dbaa23" />
-            <stop
-                offset=".38"
-                stop-color="#e7b320" />
-            <stop
-                offset=".53"
-                stop-color="#ebb61f" />
-            <stop
-                offset="1"
-                stop-color="#b68c2e" />
-        </linearGradient>
+        <defs>
+            <linearGradient
+                id="New_Gradient_Swatch_3"
+                data-name="New Gradient Swatch 3"
+                x1="272.05"
+                y1="800.76"
+                x2="823.84"
+                y2="225.21"
+                gradientUnits="userSpaceOnUse">
+                <stop
+                    offset="0"
+                    stop-color="#9f6d29" />
+                <stop
+                    offset=".03"
+                    stop-color="#a56f28" />
+                <stop
+                    offset=".15"
+                    stop-color="#bf7927" />
+                <stop
+                    offset=".27"
+                    stop-color="#d28125" />
+                <stop
+                    offset=".4"
+                    stop-color="#de8525" />
+                <stop
+                    offset=".53"
+                    stop-color="#e28725" />
+                <stop
+                    offset="1"
+                    stop-color="#9f6d29" />
+            </linearGradient>
+            <linearGradient
+                id="New_Gradient_Swatch_1"
+                data-name="New Gradient Swatch 1"
+                x1="328.96"
+                y1="644.68"
+                x2="653.7"
+                y2="271.1"
+                gradientUnits="userSpaceOnUse">
+                <stop
+                    offset="0"
+                    stop-color="#808185" />
+                <stop
+                    offset=".02"
+                    stop-color="#86878b" />
+                <stop
+                    offset=".11"
+                    stop-color="#a8a9ac" />
+                <stop
+                    offset=".21"
+                    stop-color="#c2c3c5" />
+                <stop
+                    offset=".32"
+                    stop-color="#d5d6d8" />
+                <stop
+                    offset=".42"
+                    stop-color="#e1e2e3" />
+                <stop
+                    offset=".53"
+                    stop-color="#e5e6e7" />
+                <stop
+                    offset="1"
+                    stop-color="#808185" />
+            </linearGradient>
+            <linearGradient
+                id="New_Gradient_Swatch_4"
+                data-name="New Gradient Swatch 4"
+                x1="387.89"
+                y1="523.96"
+                x2="547.62"
+                y2="358.95"
+                gradientUnits="userSpaceOnUse">
+                <stop
+                    offset="0"
+                    stop-color="#b68c2e" />
+                <stop
+                    offset=".1"
+                    stop-color="#c99b28" />
+                <stop
+                    offset=".24"
+                    stop-color="#dbaa23" />
+                <stop
+                    offset=".38"
+                    stop-color="#e7b320" />
+                <stop
+                    offset=".53"
+                    stop-color="#ebb61f" />
+                <stop
+                    offset="1"
+                    stop-color="#b68c2e" />
+            </linearGradient>
+        </defs>
         <g>
             <path
                 class="management-cls-9"
@@ -578,7 +584,7 @@
                 d="m192.62,587.08l4.3,6.19,3.29-2.28,1.04,1.49-4.86,3.37-5.33-7.68,1.57-1.09Z" />
             <path
                 class="management-cls-7"
-                d="m199.82,582.09c2.12-1.54,5.21-1.02,6.62,1.1,1.49,2.06.9,5.13-1.28,6.58l-2.53,1.76-5.33-7.68,2.53-1.76Zm1,1.44l-.96.67,3.34,4.8.96-.67c1.4-.97,1.63-2.72.7-4.05-.92-1.33-2.64-1.73-4.04-.76Z" />
+                d="m199.82,582.09c2.12-1.54,5.21-1.02,6.62,1.1,1.49,2.06.9,5.13-1.28,6.58l-2.53,1.76-5.33-7.68,2.53-1.76Zm1,1.44l-.96.67,3.34,4.8.96-.67c1.4-.97,1.63-2.72.7-4.05s-2.64-1.73-4.04-.76Z" />
         </g>
         <g>
             <path
@@ -677,7 +683,7 @@
                 d="m570.03,660.31s-5.89,1.5-1.78,4.66c4.11,3.16-1.3,5.32-1.3,5.32" />
             <path
                 class="management-cls-1"
-                d="m573.5,663.4s-3.1.93-.94,2.9c2.16,1.97-.68,3.31-.68,3.31" />
+                d="m573.5,663.4s-3.1.93-.94,2.9-.68,3.31-.68,3.31" />
             <path
                 class="management-cls-1"
                 d="m565.5,664.79s-2.08.62-.63,1.94c1.45,1.32-.46,2.22-.46,2.22" />

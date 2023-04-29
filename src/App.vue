@@ -13,12 +13,14 @@ const controlsStore = useControlsStore();
     <div class="p-6">
         <div class="flex h-[640px]">
             <VerticalSlider />
+
             <ButtonMenu />
 
             <!-- Wheel Area -->
             <div class="h-full w-full">
                 <WheelSvg />
 
+                <!-- Test Output -->
                 <div
                     class="absolute right-2 top-1 rounded-lg bg-slate-950 bg-opacity-60 px-5 py-3 font-mono text-sm leading-5 text-white">
                     <table>

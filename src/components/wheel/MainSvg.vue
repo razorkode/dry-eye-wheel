@@ -1,9 +1,8 @@
 <script setup>
-import { onMounted } from 'vue';
-import { useControlsStore } from '../../stores/controlsStore.js';
-import ManagementSvg from './management/MainSvg.vue';
-import MitigationSvg from './mitigation/MainSvg.vue';
-import MeasurementSvg from './measurement/MainSvg.vue';
+import { useControlsStore } from '@/stores/controlsStore.js';
+import ManagementSvg from '@/components/wheel/management/MainSvg.vue';
+import MitigationSvg from '@/components/wheel/mitigation/MainSvg.vue';
+import MeasurementSvg from '@/components/wheel/measurement/MainSvg.vue';
 
 const controlsStore = useControlsStore();
 </script>

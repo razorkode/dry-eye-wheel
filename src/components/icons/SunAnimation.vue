@@ -1,6 +1,6 @@
 <script setup>
-import LottieAnimation from '../../lib/LottieAnimation.vue';
-import SunJson from '../../assets/json/sun.json';
+import LottieAnimation from '@/lib/LottieAnimation.vue';
+import SunJson from '@/assets/json/sun.json';
 
 const props = defineProps({
     targetId: {
