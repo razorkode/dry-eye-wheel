@@ -40,20 +40,20 @@ const controlsStore = useControlsStore();
                 <td>{{ controlsStore.managementAreaClasses }}</td>
             </tr>
             <tr>
-                <td class="pr-2 text-gray-300">triagingSectionClasses</td>
-                <td>{{ controlsStore.triagingSectionClasses }}</td>
+                <td class="pr-2 text-gray-300">triagingSectionGrayscale</td>
+                <td>{{ controlsStore.triagingSectionGrayscale }}</td>
             </tr>
             <tr>
-                <td class="pr-2 text-gray-300">riskFactorsSectionClasses</td>
-                <td>{{ controlsStore.riskFactorsSectionClasses }}</td>
+                <td class="pr-2 text-gray-300">riskFactorsSectionGrayscale</td>
+                <td>{{ controlsStore.riskFactorsSectionGrayscale }}</td>
             </tr>
             <tr>
-                <td class="pr-2 text-gray-300">diagnosisSectionClasses</td>
-                <td>{{ controlsStore.diagnosisSectionClasses }}</td>
+                <td class="pr-2 text-gray-300">diagnosisSectionGrayscale</td>
+                <td>{{ controlsStore.diagnosisSectionGrayscale }}</td>
             </tr>
             <tr>
-                <td class="pr-2 text-gray-300">subClassificationSectionClasses</td>
-                <td>{{ controlsStore.subClassificationSectionClasses }}</td>
+                <td class="pr-2 text-gray-300">subClassificationSectionGrayscale</td>
+                <td>{{ controlsStore.subClassificationSectionGrayscale }}</td>
             </tr>
         </table>
     </div>

@@ -105,47 +105,43 @@ export const useControlsStore = defineStore('controls', {
             return classes;
         },
 
-        // Mitigation: Section Classes
-        triagingSectionClasses(state) {
-            let classes = '';
+        // Mitigation: Section Grayscale
+        triagingSectionGrayscale(state) {
             if (state.selectedArea === 'mitigation' && state.selectedSection === 'risk-factors') {
-                classes = 'grayscale';
+                return true;
             }
             if (!state.defaultState && state.selectedArea !== 'mitigation') {
-                classes = 'grayscale';
+                return true;
             }
-            return classes;
+            return false;
         },
-        riskFactorsSectionClasses(state) {
-            let classes = '';
+        riskFactorsSectionGrayscale(state) {
             if (state.selectedArea === 'mitigation' && state.selectedSection === 'triaging') {
-                classes = 'grayscale';
+                return true;
             }
             if (!state.defaultState && state.selectedArea !== 'mitigation') {
-                classes = 'grayscale';
+                return true;
             }
-            return classes;
+            return false;
         },
-        // Measurement: Section Classes
-        diagnosisSectionClasses(state) {
-            let classes = '';
+        // Measurement: Section Grayscale
+        diagnosisSectionGrayscale(state) {
             if (state.selectedArea === 'measurement' && state.selectedSection === 'sub-classification') {
-                classes = 'grayscale';
+                return true;
             }
             if (!state.defaultState && state.selectedArea !== 'measurement') {
-                classes = 'grayscale';
+                return true;
             }
-            return classes;
+            return false;
         },
-        subClassificationSectionClasses(state) {
-            let classes = '';
+        subClassificationSectionGrayscale(state) {
             if (state.selectedArea === 'measurement' && state.selectedSection === 'diagnosis') {
-                classes = 'grayscale';
+                return true;
             }
             if (!state.defaultState && state.selectedArea !== 'measurement') {
-                classes = 'grayscale';
+                return true;
             }
-            return classes;
+            return false;
         },
     },
 });

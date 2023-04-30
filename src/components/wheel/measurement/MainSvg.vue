@@ -22,6 +22,15 @@ const controlsStore = useControlsStore();
         xmlns:xlink="http://www.w3.org/1999/xlink"
         viewBox="-60 -60 1000 1000">
         <defs>
+            <filter id="grayscaleFilter">
+                <feColorMatrix
+                    type="matrix"
+                    values="
+        0.2126 0.7152 0.0722 0 0
+        0.2126 0.7152 0.0722 0 0
+        0.2126 0.7152 0.0722 0 0
+        0      0      0      1 0" />
+            </filter>
             <linearGradient
                 id="New_Gradient_Swatch_3"
                 data-name="New Gradient Swatch 3"
@@ -224,14 +233,14 @@ const controlsStore = useControlsStore();
 
             <!-- Sub Class: 1 of 3 -->
             <path
-                :class="controlsStore.subClassificationSectionClasses"
                 class="measurement-cls-15"
+                :filter="controlsStore.subClassificationSectionGrayscale ? 'url(#grayscaleFilter)' : ''"
                 d="m782.29,193.25l-130.4,79.15c23.98,38.35,37.84,83.67,37.84,132.23,0,44.29-11.54,85.88-31.75,121.95l-14.24-8.43,143.88,85.21c33.97-59.06,53.4-127.54,53.4-200.57,0-76.76-21.47-148.49-58.73-209.54Z" />
 
             <!-- Diagnosis: 1 of 3 -->
             <path
-                :class="controlsStore.diagnosisSectionClasses"
                 class="measurement-cls-20"
+                :filter="controlsStore.diagnosisSectionGrayscale ? 'url(#grayscaleFilter)' : ''"
                 d="m651.82,272.3l130.41-79.14C712.3,78.64,586.8,1.76,443.22.01l.54,154.83c87.77,1.33,164.55,47.92,208.07,117.46Z" />
 
             <path
@@ -246,8 +255,8 @@ const controlsStore = useControlsStore();
 
             <!-- Sub Class: 2 of 3 -->
             <path
-                :class="controlsStore.subClassificationSectionClasses"
                 class="measurement-cls-27"
+                :filter="controlsStore.subClassificationSectionGrayscale ? 'url(#grayscaleFilter)' : ''"
                 d="m689.73,404.63c0-48.56-13.87-93.88-37.84-132.23l-114.13,69.27c11.34,17.91,17.91,39.15,17.91,61.92,0,20.21-5.17,39.2-14.26,55.74l-.4-1.3,26.24,84.11,76.49-24,14.24,8.43c20.21-36.07,31.75-77.66,31.75-121.95Z" />
             <path
                 class="measurement-cls-19"
@@ -261,8 +270,8 @@ const controlsStore = useControlsStore();
 
             <!-- Diagnosis: 2 of 3 -->
             <path
-                :class="controlsStore.diagnosisSectionClasses"
                 class="measurement-cls-30"
+                :filter="controlsStore.diagnosisSectionGrayscale ? 'url(#grayscaleFilter)' : ''"
                 d="m443.75,154.84l.04,10.84,63.21,56.25-62.02,69.47,3.06-3.42c37.73,2.67,70.47,23.4,89.64,53.59l114.14-69.26c-43.52-69.54-120.3-116.12-208.07-117.46Z" />
             <path
                 class="measurement-cls-22"
@@ -273,8 +282,8 @@ const controlsStore = useControlsStore();
 
             <!-- Sub Class: 3 of 3 -->
             <path
-                :class="controlsStore.subClassificationSectionClasses"
                 class="measurement-cls-17"
+                :filter="controlsStore.subClassificationSectionGrayscale ? 'url(#grayscaleFilter)' : ''"
                 d="m555.67,403.6c0-22.77-6.57-44.01-17.91-61.92l-93.5,56.76,96.75,59.61.4,1.3c9.09-16.54,14.26-35.54,14.26-55.74Z" />
             <path
                 class="measurement-cls-23"
@@ -285,8 +294,8 @@ const controlsStore = useControlsStore();
 
             <!-- Diagnosis: 3 of 3 -->
             <path
-                :class="controlsStore.diagnosisSectionClasses"
                 class="measurement-cls-18"
+                :filter="controlsStore.diagnosisSectionGrayscale ? 'url(#grayscaleFilter)' : ''"
                 d="m537.68,341.56l-92.51,56.14,92.51-56.14c-19.17-30.19-51.91-50.92-89.64-53.59l-3.06,3.42-1.35,106.66.61.38,93.5-56.76s-.05-.08-.07-.12Z" />
             <g>
                 <line
