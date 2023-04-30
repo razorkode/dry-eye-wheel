@@ -3,12 +3,15 @@ import { useControlsStore } from '@/stores/controlsStore.js';
 import ManagementSvg from '@/components/wheel/management/MainSvg.vue';
 import MitigationSvg from '@/components/wheel/mitigation/MainSvg.vue';
 import MeasurementSvg from '@/components/wheel/measurement/MainSvg.vue';
+import Popovers from '@/components/layout/Popovers.vue';
 
 const controlsStore = useControlsStore();
 </script>
 
 <template>
     <div class="relative">
+        <Popovers />
+
         <MitigationSvg
             :class="controlsStore.mitigationAreaClasses"
             class="mitigation-svg absolute max-h-[700px] w-full transition-all duration-300" />

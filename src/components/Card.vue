@@ -12,7 +12,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="flex max-w-md flex-col gap-2 rounded-2xl border border-gray-400 p-6 shadow-md">
+    <div class="flex max-w-md flex-col gap-2 rounded-2xl border border-gray-400 bg-white p-6 shadow-md">
         <div
             v-if="$slots.icon"
             class="text-center">
@@ -26,7 +26,7 @@ const props = defineProps({
             class="text-center uppercase">
             {{ props.title }}
         </div>
-        <div class="flex flex-col gap-3 text-center leading-5 text-gray-600">
+        <div class="flex flex-col gap-3 text-center text-sm leading-5 text-gray-600">
             <slot></slot>
         </div>
     </div>

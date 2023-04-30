@@ -5,7 +5,7 @@ const controlsStore = useControlsStore();
 
 <template>
     <div
-        class="absolute right-2 top-1 rounded-lg bg-slate-950 bg-opacity-60 px-5 py-3 font-mono text-sm leading-5 text-white">
+        class="absolute right-2 top-1 z-20 rounded-lg bg-slate-950 bg-opacity-60 px-5 py-3 font-mono text-sm leading-5 text-white">
         <table>
             <tr>
                 <td class="pr-2 text-gray-300">Default State</td>

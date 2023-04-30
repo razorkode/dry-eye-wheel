@@ -20,7 +20,7 @@ const controlsStore = useControlsStore();
             <!-- Wheel Area -->
             <div class="h-full w-full">
                 <WheelSvg />
-                <!-- <TestOutput /> -->
+                <TestOutput />
             </div>
         </div>
 
