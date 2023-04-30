@@ -5,7 +5,7 @@ import Card from '@/components/Card.vue';
 <template>
     <Card
         title="Mitigation"
-        class="absolute left-1/2 top-48 z-10 col-span-5 ml-[-224px] max-w-md">
+        class="absolute left-1/2 top-[360px] z-10 col-span-5 ml-[-80px] max-w-md">
         <div>
             Triaging with a targeted history and symptoms, as well as conducting a differential diagnosis can allow
             prophylactic measures to be put in place to limit ocular surface damage.

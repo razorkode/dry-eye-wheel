@@ -38,7 +38,7 @@ onMounted(() => {
             class="text-center uppercase">
             {{ props.title }}
         </div>
-        <div class="flex flex-col gap-3 text-center text-sm leading-5 text-gray-600">
+        <div class="flex flex-col gap-3 text-center text-sm leading-4 text-gray-600">
             <slot></slot>
         </div>
     </div>
