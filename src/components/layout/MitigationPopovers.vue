@@ -1,8 +1,15 @@
 <script setup>
 import { useControlsStore } from '@/stores/controlsStore.js';
 import MitigationPopover from '@/components/wheel/popovers/MitigationPopover.vue';
-import QuestionnaireForEarlyId from '@/components/wheel/popovers/mitigation/QuestionnaireForEarlyId.vue';
-import DifferentialDiagnosis from '@/components/wheel/popovers/mitigation/DifferentialDiagnosis.vue';
+import QuestionnaireForEarlyIdPopover from '@/components/wheel/popovers/mitigation/QuestionnaireForEarlyIdPopover.vue';
+import DifferentialDiagnosisPopover from '@/components/wheel/popovers/mitigation/DifferentialDiagnosisPopover.vue';
+import ProphylaxisPopover from '@/components/wheel/popovers/mitigation/ProphylaxisPopover.vue';
+import SleepPopover from '@/components/wheel/popovers/mitigation/SleepPopover.vue';
+import ContactLensesPopover from '@/components/wheel/popovers/mitigation/ContactLensesPopover.vue';
+import EyeStrainPopover from '@/components/wheel/popovers/mitigation/EyeStrainPopover.vue';
+import EnvironmentPopover from '@/components/wheel/popovers/mitigation/EnvironmentPopover.vue';
+import HormonesPopover from '@/components/wheel/popovers/mitigation/HormonesPopover.vue';
+import MedicationReviewPopover from '@/components/wheel/popovers/mitigation/MedicationReviewPopover.vue';
 
 const controlsStore = useControlsStore();
 </script>
@@ -14,8 +21,15 @@ const controlsStore = useControlsStore();
         " />
 
     <!-- Section Popovers -->
-    <QuestionnaireForEarlyId v-if="controlsStore.selectedItem === 'questionnaire'" />
-    <DifferentialDiagnosis v-if="controlsStore.selectedItem === 'differential'" />
+    <QuestionnaireForEarlyIdPopover v-if="controlsStore.selectedItem === 'questionnaire'" />
+    <DifferentialDiagnosisPopover v-if="controlsStore.selectedItem === 'differential'" />
+    <ProphylaxisPopover v-if="controlsStore.selectedItem === 'prophylaxis'" />
+    <SleepPopover v-if="controlsStore.selectedItem === 'sleep'" />
+    <ContactLensesPopover v-if="controlsStore.selectedItem === 'contact-lens'" />
+    <EyeStrainPopover v-if="controlsStore.selectedItem === 'eye-strain'" />
+    <EnvironmentPopover v-if="controlsStore.selectedItem === 'environment'" />
+    <HormonesPopover v-if="controlsStore.selectedItem === 'hormones'" />
+    <MedicationReviewPopover v-if="controlsStore.selectedItem === 'medication-review'" />
 </template>
 
 <style lang="postcss" scoped></style>
