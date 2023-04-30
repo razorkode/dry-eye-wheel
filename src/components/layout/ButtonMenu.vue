@@ -37,10 +37,10 @@ const controlsStore = useControlsStore();
                     Questionnaire
                 </GradientButton>
                 <GradientButton
-                    @click="controlsStore.selectItem('contact-lens', 'risk-factors', 'mitigation')"
-                    :class="{ active: controlsStore.selectedItem === 'contact-lens' }"
+                    @click="controlsStore.selectItem('sleep', 'risk-factors', 'mitigation')"
+                    :class="{ active: controlsStore.selectedItem === 'sleep' }"
                     class="btn-orange">
-                    Contact Lens
+                    Sleep
                 </GradientButton>
             </div>
             <div class="grid grid-cols-2 gap-3">
@@ -51,10 +51,10 @@ const controlsStore = useControlsStore();
                     Differential
                 </GradientButton>
                 <GradientButton
-                    @click="controlsStore.selectItem('eye-strain', 'risk-factors', 'mitigation')"
-                    :class="{ active: controlsStore.selectedItem === 'eye-strain' }"
+                    @click="controlsStore.selectItem('contact-lens', 'risk-factors', 'mitigation')"
+                    :class="{ active: controlsStore.selectedItem === 'contact-lens' }"
                     class="btn-orange">
-                    Eye Strain
+                    Contact Lens
                 </GradientButton>
             </div>
             <div class="grid grid-cols-2 gap-3">
@@ -64,6 +64,15 @@ const controlsStore = useControlsStore();
                     class="btn-yellow">
                     Prophylaxis
                 </GradientButton>
+                <GradientButton
+                    @click="controlsStore.selectItem('eye-strain', 'risk-factors', 'mitigation')"
+                    :class="{ active: controlsStore.selectedItem === 'eye-strain' }"
+                    class="btn-orange">
+                    Eye Strain
+                </GradientButton>
+            </div>
+            <div class="grid grid-cols-2 gap-3">
+                <div>&nbsp;</div>
                 <GradientButton
                     @click="controlsStore.selectItem('environment', 'risk-factors', 'mitigation')"
                     :class="{ active: controlsStore.selectedItem === 'environment' }"
