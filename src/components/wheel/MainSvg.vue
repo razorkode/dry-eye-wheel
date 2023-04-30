@@ -3,14 +3,18 @@ import { useControlsStore } from '@/stores/controlsStore.js';
 import ManagementSvg from '@/components/wheel/management/MainSvg.vue';
 import MitigationSvg from '@/components/wheel/mitigation/MainSvg.vue';
 import MeasurementSvg from '@/components/wheel/measurement/MainSvg.vue';
-import Popovers from '@/components/layout/Popovers.vue';
+import MitigationPopovers from '@/components/layout/MitigationPopovers.vue';
+import MeasurementPopovers from '@/components/layout/MeasurementPopovers.vue';
+import ManagementPopovers from '@/components/layout/ManagementPopovers.vue';
 
 const controlsStore = useControlsStore();
 </script>
 
 <template>
     <div class="relative">
-        <Popovers />
+        <MitigationPopovers />
+        <MeasurementPopovers />
+        <ManagementPopovers />
 
         <MitigationSvg
             :class="controlsStore.mitigationAreaClasses"
