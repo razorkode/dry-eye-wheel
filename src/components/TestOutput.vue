@@ -1,12 +1,24 @@
 <script setup>
 import { useControlsStore } from '@/stores/controlsStore.js';
+import { ref } from 'vue';
+
 const controlsStore = useControlsStore();
+
+const showTestBox = ref(true);
 </script>
 
 <template>
     <div
         class="absolute right-2 top-1 z-20 rounded-lg bg-slate-950 bg-opacity-60 px-5 py-3 font-mono text-sm leading-5 text-white">
-        <table>
+        <div class="flex justify-end">
+            <a
+                @click="showTestBox = !showTestBox"
+                href="#"
+                class="z-50 cursor-pointer text-sm text-sky-300 underline"
+                >{{ showTestBox ? 'Minimize' : 'Show' }} Test Data</a
+            >
+        </div>
+        <table v-if="showTestBox">
             <tr>
                 <td class="pr-2 text-gray-300">Default State</td>
                 <td>{{ !!controlsStore.defaultState }}</td>
