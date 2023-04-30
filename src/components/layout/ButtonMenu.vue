@@ -33,7 +33,7 @@ watch(sliderValue, () => {
 <template>
     <div
         id="scroll-me"
-        class="mx-6 flex min-w-[320px] max-w-full flex-col gap-3 overflow-y-hidden p-[3px]">
+        class="mx-6 flex w-full flex-col gap-3 overflow-y-hidden p-[3px]">
         <!-- Mitigation -->
         <GradientButton
             id="mitigation-area"

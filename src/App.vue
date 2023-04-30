@@ -14,13 +14,17 @@ const controlsStore = useControlsStore();
 <template>
     <div class="p-6">
         <div class="flex h-[700px]">
-            <VerticalSlider />
-            <ButtonMenu />
+            <div class="flex h-[660px] w-96">
+                <VerticalSlider />
+                <ButtonMenu />
+            </div>
 
             <!-- Wheel Area -->
-            <div class="h-full w-full">
-                <WheelSvg />
-                <TestOutput />
+            <div class="grow">
+                <div class="h-full w-full">
+                    <WheelSvg />
+                    <TestOutput />
+                </div>
             </div>
         </div>
 
