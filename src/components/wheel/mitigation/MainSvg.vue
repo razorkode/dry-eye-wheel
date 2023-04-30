@@ -503,6 +503,11 @@ const controlsStore = useControlsStore();
 .mitigation-cls-1 {
     fill: #010101;
 }
+.svg-active {
+    .mitigation-cls-1 {
+        fill: #fff;
+    }
+}
 
 .mitigation-cls-2 {
     fill: #fff;
@@ -510,6 +515,11 @@ const controlsStore = useControlsStore();
 
 .mitigation-cls-3 {
     fill: #a6a8ac;
+}
+.svg-active {
+    .mitigation-cls-3 {
+        fill: #fff;
+    }
 }
 
 .mitigation-cls-4 {
@@ -559,6 +569,15 @@ const controlsStore = useControlsStore();
 .mitigation-cls-9,
 .mitigation-cls-10 {
     stroke: #000;
+}
+.svg-active {
+    .mitigation-cls-5,
+    .mitigation-cls-7,
+    .mitigation-cls-8,
+    .mitigation-cls-9,
+    .mitigation-cls-10 {
+        stroke: #fff;
+    }
 }
 
 .mitigation-cls-11 {

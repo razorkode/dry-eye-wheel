@@ -170,10 +170,10 @@ const controlsStore = useControlsStore();
                     Non-Invasive Breakup Time
                 </GradientButton>
                 <GradientButton
-                    @click="controlsStore.selectItem('tear-meniscus-height', 'sub-classification', 'measurement')"
-                    :class="{ active: controlsStore.selectedItem === 'tear-meniscus-height' }"
+                    @click="controlsStore.selectItem('meibography', 'sub-classification', 'measurement')"
+                    :class="{ active: controlsStore.selectedItem === 'meibography' }"
                     class="btn-yellow">
-                    Tear Meniscus Height
+                    Meibography
                 </GradientButton>
             </div>
             <div class="grid grid-cols-2 gap-3">

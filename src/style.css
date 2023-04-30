@@ -46,13 +46,31 @@ body {
 }
 
 .svg-active {
-    @apply !fill-white;
     circle,
     line,
     polygon {
         @apply !stroke-white;
     }
-    path {
+    rect,
+    polygon {
         @apply !fill-white;
+    }
+
+    &.svg-fill-path {
+        path {
+            @apply !fill-white;
+        }
+    }
+
+    &.svg-fill-circle {
+        circle {
+            @apply !fill-white;
+        }
+    }
+
+    &.svg-stroke-polyline {
+        polyline {
+            @apply !stroke-white;
+        }
     }
 }

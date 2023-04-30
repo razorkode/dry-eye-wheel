@@ -4,7 +4,9 @@ const controlsStore = useControlsStore();
 </script>
 
 <template>
-    <g>
+    <g
+        :class="{ 'svg-active': controlsStore.selectedItem === 'intense-pulsed-light-therapy' }"
+        class="svg-fill-path">
         <g>
             <g id="a0Abqb">
                 <path

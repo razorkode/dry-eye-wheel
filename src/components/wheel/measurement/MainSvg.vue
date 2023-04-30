@@ -471,6 +471,11 @@ const controlsStore = useControlsStore();
     stroke: #241f20;
     stroke-width: 1.5px;
 }
+.svg-active {
+    .measurement-cls-2 {
+        stroke: #fff;
+    }
+}
 
 .measurement-cls-2,
 .measurement-cls-3,
@@ -511,17 +516,43 @@ const controlsStore = useControlsStore();
 .measurement-cls-10 {
     stroke: #000;
 }
+.svg-active {
+    .measurement-cls-3,
+    .measurement-cls-11,
+    .measurement-cls-5,
+    .measurement-cls-6,
+    .measurement-cls-7,
+    .measurement-cls-8,
+    .measurement-cls-10 {
+        stroke: #fff;
+    }
+}
 
 .measurement-cls-12 {
     fill: #010101;
+}
+.svg-active {
+    .measurement-cls-12 {
+        fill: #fff;
+    }
 }
 
 .measurement-cls-13 {
     fill: #fff;
 }
+.svg-active {
+    .measurement-cls-13 {
+        fill: #fff;
+    }
+}
 
 .measurement-cls-14 {
     fill: #a6a8ac;
+}
+.svg-active {
+    .measurement-cls-14 {
+        fill: #fff;
+    }
 }
 
 .measurement-cls-15 {

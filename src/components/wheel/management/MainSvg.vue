@@ -240,6 +240,11 @@ const controlsStore = useControlsStore();
 .management-cls-1 {
     stroke: #010101;
 }
+.svg-active {
+    .management-cls-1 {
+        stroke: #fff;
+    }
+}
 
 .management-cls-1,
 .management-cls-2,
@@ -269,6 +274,11 @@ const controlsStore = useControlsStore();
 .management-cls-6 {
     fill: #010101;
 }
+.svg-active {
+    .management-cls-6 {
+        fill: #fff;
+    }
+}
 
 .management-cls-7 {
     fill: #fff;
@@ -276,6 +286,11 @@ const controlsStore = useControlsStore();
 
 .management-cls-8 {
     fill: #a6a8ac;
+}
+.svg-active {
+    .management-cls-8 {
+        fill: #fff;
+    }
 }
 
 .management-cls-9 {
@@ -298,5 +313,10 @@ const controlsStore = useControlsStore();
 .management-cls-4 {
     stroke: #241f20;
     stroke-width: 3px;
+}
+.svg-active {
+    .management-cls-4 {
+        stroke: #fff;
+    }
 }
 </style>

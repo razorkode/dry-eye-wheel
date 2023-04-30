@@ -4,7 +4,9 @@ const controlsStore = useControlsStore();
 </script>
 
 <template>
-    <g :class="{ 'svg-active': controlsStore.selectedItem === 'prophylaxis' }">
+    <g
+        :class="{ 'svg-active': controlsStore.selectedItem === 'prophylaxis' }"
+        class="svg-fill-path">
         <g id="CcNbeA">
             <g>
                 <path

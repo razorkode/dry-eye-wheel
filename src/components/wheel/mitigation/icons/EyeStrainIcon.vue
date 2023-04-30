@@ -4,7 +4,9 @@ const controlsStore = useControlsStore();
 </script>
 
 <template>
-    <g :class="{ 'svg-active': controlsStore.selectedItem === 'eye-strain' }">
+    <g
+        :class="{ 'svg-active': controlsStore.selectedItem === 'eye-strain' }"
+        class="svg-fill-path">
         <g>
             <path
                 class="mitigation-cls-1"

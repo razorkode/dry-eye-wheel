@@ -4,7 +4,9 @@ const controlsStore = useControlsStore();
 </script>
 
 <template>
-    <g>
+    <g
+        :class="{ 'svg-active': controlsStore.selectedItem === 'blink-rate-and-completeness' }"
+        class="svg-fill-path">
         <g>
             <path
                 class="measurement-cls-12"

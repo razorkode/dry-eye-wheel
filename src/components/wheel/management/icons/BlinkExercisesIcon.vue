@@ -4,7 +4,9 @@ const controlsStore = useControlsStore();
 </script>
 
 <template>
-    <g>
+    <g
+        :class="{ 'svg-active': controlsStore.selectedItem === 'blink-exercises' }"
+        class="svg-fill-path svg-fill-circle">
         <g>
             <g id="E5tU7s">
                 <g>

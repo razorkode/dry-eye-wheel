@@ -4,7 +4,9 @@ const controlsStore = useControlsStore();
 </script>
 
 <template>
-    <g :class="{ 'svg-active': controlsStore.selectedItem === 'differential' }">
+    <g
+        :class="{ 'svg-active': controlsStore.selectedItem === 'differential' }"
+        class="svg-fill-path">
         <g
             id="_9unT3F"
             data-name="9unT3F">
