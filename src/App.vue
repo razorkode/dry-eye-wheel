@@ -14,6 +14,7 @@ const controlsStore = useControlsStore();
 <template>
     <div class="p-6">
         <div class="flex h-[700px]">
+            <!-- Vetical Slider/Menu Area -->
             <div class="flex h-[660px] w-96">
                 <VerticalSlider />
                 <ButtonMenu />
@@ -58,7 +59,7 @@ const controlsStore = useControlsStore();
             </Card>
         </div>
 
-        <Card title="Title">
+        <!-- <Card title="Title">
             <template #icon>
                 <Environment
                     targetId="sunAnim5"
@@ -77,6 +78,6 @@ const controlsStore = useControlsStore();
                 <td><Environment targetId="sunAnim3" /></td>
                 <td><Environment targetId="sunAnim4" /></td>
             </tr>
-        </table>
+        </table> -->
     </div>
 </template>
