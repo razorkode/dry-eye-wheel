@@ -1,6 +1,7 @@
 <script setup>
 import { useControlsStore } from '@/stores/controlsStore.js';
 import MitigationPopover from '@/components/wheel/popovers/MitigationPopover.vue';
+import QuestionnaireForEarlyId from '@/components/wheel/popovers/mitigation/QuestionnaireForEarlyId.vue';
 
 const controlsStore = useControlsStore();
 </script>
@@ -12,6 +13,7 @@ const controlsStore = useControlsStore();
         " />
 
     <!-- Section Popovers -->
+    <QuestionnaireForEarlyId v-if="controlsStore.selectedItem === 'questionnaire'" />
 </template>
 
 <style lang="postcss" scoped></style>

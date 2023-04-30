@@ -24,7 +24,7 @@ onMounted(() => {
 <template>
     <div
         :class="[showCard ? ' translate-y-0 opacity-100' : 'translate-y-5 opacity-0']"
-        class="flex max-w-md flex-col gap-2 rounded-2xl border border-gray-400 bg-white p-6 shadow-lg transition-all duration-700">
+        class="flex max-w-[500px] flex-col gap-2 rounded-2xl border border-gray-400 bg-white p-6 shadow-lg transition-all duration-700">
         <div
             v-if="$slots.icon"
             class="text-center">
