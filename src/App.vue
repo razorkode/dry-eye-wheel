@@ -1,7 +1,5 @@
 <script setup>
 import { useControlsStore } from '@/stores/controlsStore.js';
-// import Advice from '@/components/icons/Advice.vue';
-// import Environment from '@/components/icons/Environment.vue';
 import WheelSvg from '@/components/wheel/MainSvg.vue';
 import VerticalSlider from '@/components/VerticalSlider.vue';
 import Card from '@/components/Card.vue';
@@ -57,26 +55,5 @@ const controlsStore = useControlsStore();
                 </div>
             </Card>
         </div>
-
-        <!-- <Card title="Title">
-            <template #icon>
-                <Environment
-                    targetId="sunAnim5"
-                    class="!h-32" />
-            </template>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusamus temporibus, ut facilis quasi
-            nisi nemo? Eius at temporibus sit asperiores, numquam incidunt dicta, ratione dolorem ut ea odit obcaecati.
-        </Card>
-
-        <table>
-            <tr>
-                <td><Advice targetId="sunAnim1" /></td>
-                <td><Environment targetId="sunAnim2" /></td>
-            </tr>
-            <tr>
-                <td><Environment targetId="sunAnim3" /></td>
-                <td><Environment targetId="sunAnim4" /></td>
-            </tr>
-        </table> -->
     </div>
 </template>
