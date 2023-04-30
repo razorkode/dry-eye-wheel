@@ -13,7 +13,7 @@ import GradientBorderBox from '@/components/layout/GradientBorderBox.vue';
         </template>
         <div>
             Dry eye disease is just one of many ocular surface diseases. Differential diagnosis helps ensure there
-            aren’t other underlying conditions, such as ocular allergy or infection, responsible for the patient’s
+            aren't other underlying conditions, such as ocular allergy or infection, responsible for the patient's
             presenting symptoms. Treat co-morbid conditions before tackling any residual dry eye disease, to increase
             the chances of successful outcomes for patients. The TFOS DEWS II triaging checklist quickly and easily
             helps narrow down the diagnosis and avoid unnecessary clinical visits.
