@@ -11,15 +11,15 @@ const controlsStore = useControlsStore();
     <div class="relative">
         <MitigationSvg
             :class="controlsStore.mitigationAreaClasses"
-            class="mitigation-svg absolute max-h-[640px] w-full transition-all duration-300" />
+            class="mitigation-svg absolute max-h-[700px] w-full transition-all duration-300" />
 
         <MeasurementSvg
             :class="controlsStore.measurementAreaClasses"
-            class="measurement-svg absolute max-h-[640px] w-full transition-all duration-300" />
+            class="measurement-svg absolute max-h-[700px] w-full transition-all duration-300" />
 
         <ManagementSvg
             :class="controlsStore.managementAreaClasses"
-            class="management-svg absolute max-h-[640px] w-full" />
+            class="management-svg absolute max-h-[700px] w-full" />
 
         <!-- Grayscale class needs to exist in a template to build in Tailwind -->
         <span class="hidden grayscale"></span>

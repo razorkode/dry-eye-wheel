@@ -44,3 +44,15 @@ body {
 .font-size-10px {
     font-size: 10px;
 }
+
+.svg-active {
+    @apply !fill-white;
+    circle,
+    line,
+    polygon {
+        @apply !stroke-white;
+    }
+    path {
+        @apply !fill-white;
+    }
+}
