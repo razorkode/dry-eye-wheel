@@ -1,6 +1,7 @@
 <script setup>
 import { useControlsStore } from '@/stores/controlsStore.js';
-import SunAnimation from '@/components/icons/SunAnimation.vue';
+import Advice from '@/components/icons/Advice.vue';
+import Environment from '@/components/icons/Environment.vue';
 import WheelSvg from '@/components/wheel/MainSvg.vue';
 import VerticalSlider from '@/components/VerticalSlider.vue';
 import Card from '@/components/Card.vue';
@@ -55,7 +56,7 @@ const controlsStore = useControlsStore();
 
         <Card title="Title">
             <template #icon>
-                <SunAnimation
+                <Environment
                     targetId="sunAnim5"
                     class="!h-32" />
             </template>
@@ -65,12 +66,12 @@ const controlsStore = useControlsStore();
 
         <table>
             <tr>
-                <td><SunAnimation targetId="sunAnim1" /></td>
-                <td><SunAnimation targetId="sunAnim2" /></td>
+                <td><Advice targetId="sunAnim1" /></td>
+                <td><Environment targetId="sunAnim2" /></td>
             </tr>
             <tr>
-                <td><SunAnimation targetId="sunAnim3" /></td>
-                <td><SunAnimation targetId="sunAnim4" /></td>
+                <td><Environment targetId="sunAnim3" /></td>
+                <td><Environment targetId="sunAnim4" /></td>
             </tr>
         </table>
     </div>
