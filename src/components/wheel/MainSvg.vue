@@ -20,6 +20,9 @@ const controlsStore = useControlsStore();
         <ManagementSvg
             :class="controlsStore.managementAreaClasses"
             class="management-svg absolute max-h-[640px] w-full" />
+
+        <!-- Grayscale class needs to exist in a template to build in Tailwind -->
+        <span class="hidden grayscale"></span>
     </div>
 </template>
 

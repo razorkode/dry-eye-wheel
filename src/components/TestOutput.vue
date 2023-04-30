@@ -28,6 +28,18 @@ const controlsStore = useControlsStore();
                 <td>{{ controlsStore.selectedItem }}</td>
             </tr>
             <tr>
+                <td class="pr-2 text-gray-300">mitigationAreaClasses</td>
+                <td>{{ controlsStore.mitigationAreaClasses }}</td>
+            </tr>
+            <tr>
+                <td class="pr-2 text-gray-300">measurementAreaClasses</td>
+                <td>{{ controlsStore.measurementAreaClasses }}</td>
+            </tr>
+            <tr>
+                <td class="pr-2 text-gray-300">managementAreaClasses</td>
+                <td>{{ controlsStore.managementAreaClasses }}</td>
+            </tr>
+            <tr>
                 <td class="pr-2 text-gray-300">triagingSectionClasses</td>
                 <td>{{ controlsStore.triagingSectionClasses }}</td>
             </tr>
