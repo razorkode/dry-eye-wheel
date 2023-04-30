@@ -47,7 +47,14 @@ export const useControlsStore = defineStore('controls', {
             this.selectedItem = item;
             this.selectSection(section, area, true);
         },
-        async handleDefaultStateClick() {
+        async handleClickVerticalSlider() {
+            await nextTick();
+            const updateSliderVal = this.sliderValue;
+            await nextTick();
+            this.reset();
+            await nextTick();
+            this.sliderValue = updateSliderVal;
+            await nextTick();
             if (this.defaultState) {
                 this.sliderValue = 50;
                 await nextTick();

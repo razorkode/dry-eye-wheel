@@ -7,7 +7,7 @@ const controlsStore = useControlsStore();
 
 <template>
     <div
-        @click="controlsStore.handleDefaultStateClick()"
+        @click="controlsStore.handleClickVerticalSlider()"
         style="height: calc(100% - 70px)">
         <VueSlider
             v-model="controlsStore.sliderValue"
