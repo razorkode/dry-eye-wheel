@@ -44,6 +44,22 @@ const controlsStore = useControlsStore();
                             <td class="pr-2 text-gray-300">Item</td>
                             <td>{{ controlsStore.selectedItem }}</td>
                         </tr>
+                        <tr>
+                            <td class="pr-2 text-gray-300">triagingSectionClasses</td>
+                            <td>{{ controlsStore.triagingSectionClasses }}</td>
+                        </tr>
+                        <tr>
+                            <td class="pr-2 text-gray-300">riskFactorsSectionClasses</td>
+                            <td>{{ controlsStore.riskFactorsSectionClasses }}</td>
+                        </tr>
+                        <tr>
+                            <td class="pr-2 text-gray-300">diagnosisSectionClasses</td>
+                            <td>{{ controlsStore.diagnosisSectionClasses }}</td>
+                        </tr>
+                        <tr>
+                            <td class="pr-2 text-gray-300">subClassificationSectionClasses</td>
+                            <td>{{ controlsStore.subClassificationSectionClasses }}</td>
+                        </tr>
                     </table>
                 </div>
             </div>

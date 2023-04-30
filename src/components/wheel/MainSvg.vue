@@ -10,24 +10,15 @@ const controlsStore = useControlsStore();
 <template>
     <div class="relative">
         <MitigationSvg
-            :class="{
-                active: controlsStore.selectedArea === 'mitigation',
-                grayscale: controlsStore.selectedArea === 'measurement' || controlsStore.selectedArea === 'management',
-            }"
+            :class="controlsStore.mitigationAreaClasses"
             class="mitigation-svg absolute max-h-[640px] w-full transition-all duration-300" />
 
         <MeasurementSvg
-            :class="{
-                active: controlsStore.selectedArea === 'measurement',
-                grayscale: controlsStore.selectedArea === 'mitigation' || controlsStore.selectedArea === 'management',
-            }"
+            :class="controlsStore.measurementAreaClasses"
             class="measurement-svg absolute max-h-[640px] w-full transition-all duration-300" />
 
         <ManagementSvg
-            :class="{
-                active: controlsStore.selectedArea === 'management',
-                grayscale: controlsStore.selectedArea === 'mitigation' || controlsStore.selectedArea === 'measurement',
-            }"
+            :class="controlsStore.managementAreaClasses"
             class="management-svg absolute max-h-[640px] w-full" />
     </div>
 </template>

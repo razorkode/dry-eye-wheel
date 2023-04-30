@@ -269,6 +269,7 @@ const controlsStore = useControlsStore();
         <g>
             <!-- Triaging: 1 of 3 -->
             <path
+                :class="controlsStore.triagingSectionClasses"
                 class="mitigation-cls-11"
                 d="m435.75,154.84L435.22,0C292.51,1.04,167.45,76.29,96.71,189.07l132.34,81.46c43.66-68.49,119.78-114.28,206.7-115.69Z" />
 
@@ -281,6 +282,7 @@ const controlsStore = useControlsStore();
 
             <!-- Triaging: 2 of 3 -->
             <path
+                :class="controlsStore.triagingSectionClasses"
                 class="mitigation-cls-27"
                 d="m229.06,270.53l113.5,69.86c20.31-31.16,55.2-51.96,95-52.7l58.14-65.12-59.89-53.3-.05-14.43c-86.91,1.41-163.03,47.2-206.7,115.69Z" />
             <polygon
@@ -295,11 +297,13 @@ const controlsStore = useControlsStore();
 
             <!-- Triaging: 3 of 3 -->
             <path
+                :class="controlsStore.triagingSectionClasses"
                 class="mitigation-cls-16"
                 d="m342.55,340.39l92.98,57.23.11-.07,1.38-109.25.53-.6c-39.8.74-74.69,21.53-95,52.7Z" />
 
             <!-- Risk Factors: 1 of 3 -->
             <path
+                :class="controlsStore.riskFactorsSectionClasses"
                 class="mitigation-cls-24"
                 d="m108.32,634l122.44-92.64c-25.74-39.29-40.72-86.26-40.72-136.73s14.3-95.31,38.98-134.05l-132.34-81.42,132.34,81.42s.02-.04.04-.06l-132.34-81.46c-38.85,61.94-61.32,135.21-61.32,213.72,0,86.03,26.98,165.77,72.93,231.21Z" />
             <polygon
@@ -317,6 +321,7 @@ const controlsStore = useControlsStore();
 
             <!-- Risk Factors: 2 of 3 -->
             <path
+                :class="controlsStore.riskFactorsSectionClasses"
                 class="mitigation-cls-29"
                 d="m323.81,403.6c0-23.31,6.89-45,18.72-63.18l-113.51-69.83c-24.68,38.73-38.98,84.72-38.98,134.05s14.98,97.44,40.72,136.73l9.52-7.2,9.82-84.12,92.48,10.95-3.84-.45c-9.5-16.82-14.93-36.24-14.93-56.94Z" />
             <path
@@ -328,6 +333,7 @@ const controlsStore = useControlsStore();
 
             <!-- Risk Factors: 3 of 3 -->
             <path
+                :class="controlsStore.riskFactorsSectionClasses"
                 class="mitigation-cls-17"
                 d="m323.81,403.6c0,20.69,5.43,40.12,14.93,56.94l3.84.45,92.95-63.36-92.99-57.21c-11.84,18.17-18.72,39.87-18.72,63.18Z" />
             <path

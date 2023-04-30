@@ -78,5 +78,74 @@ export const useControlsStore = defineStore('controls', {
                 return 'management';
             }
         },
+
+        // Area Classes
+        mitigationAreaClasses(state) {
+            let classes = '';
+            if (state.selectedArea === 'mitigation') {
+                return 'active';
+            }
+            return classes;
+        },
+        measurementAreaClasses(state) {
+            let classes = '';
+            if (state.selectedArea === 'measurement') {
+                return 'active';
+            }
+            return classes;
+        },
+        managementAreaClasses(state) {
+            let classes = '';
+            if (state.selectedArea === 'management') {
+                classes = 'active';
+            }
+            if (state.selectedArea === 'mitigation' || state.selectedArea === 'measurement') {
+                classes = `${classes} grayscale`;
+            }
+            return classes;
+        },
+
+        // Mitigation: Section Classes
+        triagingSectionClasses(state) {
+            let classes = '';
+            if (state.selectedArea === 'mitigation' && state.selectedSection === 'risk-factors') {
+                classes = 'grayscale';
+            }
+            if (!state.defaultState && state.selectedArea !== 'mitigation') {
+                classes = 'grayscale';
+            }
+            return classes;
+        },
+        riskFactorsSectionClasses(state) {
+            let classes = '';
+            if (state.selectedArea === 'mitigation' && state.selectedSection === 'triaging') {
+                classes = 'grayscale';
+            }
+            if (!state.defaultState && state.selectedArea !== 'mitigation') {
+                classes = 'grayscale';
+            }
+            return classes;
+        },
+        // Measurement: Section Classes
+        diagnosisSectionClasses(state) {
+            let classes = '';
+            if (state.selectedArea === 'measurement' && state.selectedSection === 'sub-classification') {
+                classes = 'grayscale';
+            }
+            if (!state.defaultState && state.selectedArea !== 'measurement') {
+                classes = 'grayscale';
+            }
+            return classes;
+        },
+        subClassificationSectionClasses(state) {
+            let classes = '';
+            if (state.selectedArea === 'measurement' && state.selectedSection === 'diagnosis') {
+                classes = 'grayscale';
+            }
+            if (!state.defaultState && state.selectedArea !== 'measurement') {
+                classes = 'grayscale';
+            }
+            return classes;
+        },
     },
 });
