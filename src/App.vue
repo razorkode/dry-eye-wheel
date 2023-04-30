@@ -1,7 +1,7 @@
 <script setup>
 import { useControlsStore } from '@/stores/controlsStore.js';
-import Advice from '@/components/icons/Advice.vue';
-import Environment from '@/components/icons/Environment.vue';
+// import Advice from '@/components/icons/Advice.vue';
+// import Environment from '@/components/icons/Environment.vue';
 import WheelSvg from '@/components/wheel/MainSvg.vue';
 import VerticalSlider from '@/components/VerticalSlider.vue';
 import Card from '@/components/Card.vue';

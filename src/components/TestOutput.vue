@@ -4,7 +4,7 @@ import { ref } from 'vue';
 
 const controlsStore = useControlsStore();
 
-const showTestBox = ref(true);
+const showTestBox = ref(false);
 </script>
 
 <template>
