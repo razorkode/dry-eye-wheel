@@ -5,7 +5,7 @@ import Card from '@/components/Card.vue';
 <template>
     <Card
         title="Management"
-        class="absolute left-1/2 top-48 z-10 col-span-5 ml-[-224px] max-w-md">
+        class="absolute left-1/2 top-[120px] z-10 col-span-5 ml-[-224px] max-w-md">
         <div>
             Management of dry eye requires a staged approach, with more severe conditions often requiring multiple
             treatments.

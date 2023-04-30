@@ -2,7 +2,7 @@
 
 <template>
     <div class="bg-gradient-to-r from-[#808285] via-[#E5E5E6] to-[#818285] p-1">
-        <div class="bg-white">
+        <div class="bg-white p-3">
             <slot></slot>
         </div>
     </div>

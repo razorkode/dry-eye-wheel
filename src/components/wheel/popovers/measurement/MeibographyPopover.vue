@@ -1,22 +1,22 @@
 <script setup>
 import Card from '@/components/Card.vue';
-import DifferentialDiagnosisIcon from '@/components/icons/DifferentialDiagnosis.vue';
+import MeibographyIcon from '@/components/icons/Meibography.vue';
 import GradientBorderBox from '@/components/layout/GradientBorderBox.vue';
 </script>
 
 <template>
     <Card
-        title="Differential"
+        title="Meibography"
         class="absolute left-1/2 top-[240px] z-10 col-span-5 ml-[-224px] max-w-xl">
         <template #icon>
-            <DifferentialDiagnosisIcon class="!-mb-8 !-mt-10 !h-40" />
+            <MeibographyIcon class="!-mb-8 !-mt-10 !h-40" />
         </template>
         <div>
-            Dry eye disease is just one of many ocular surface diseases. Differential diagnosis helps ensure there
-            aren't other underlying conditions, such as ocular allergy or infection, responsible for the patient's
-            presenting symptoms. Treat co-morbid conditions before tackling any residual dry eye disease, to increase
-            the chances of successful outcomes for patients. The TFOS DEWS II triaging checklist quickly and easily
-            helps narrow down the diagnosis and avoid unnecessary clinical visits.
+            Dry eye disease is just one of many ocular surface diseases. ComfortTimeAfterBlinkTest diagnosis helps
+            ensure there aren't other underlying conditions, such as ocular allergy or infection, responsible for the
+            patient's presenting symptoms. Treat co-morbid conditions before tackling any residual dry eye disease, to
+            increase the chances of successful outcomes for patients. The TFOS DEWS II triaging checklist quickly and
+            easily helps narrow down the diagnosis and avoid unnecessary clinical visits.
         </div>
         <GradientBorderBox>
             <ul class="mx-1 list-inside list-disc text-left text-xs">
@@ -33,7 +33,7 @@ import GradientBorderBox from '@/components/layout/GradientBorderBox.vue';
                 </li>
             </ul>
             <div class="text-xs font-bold text-[#2B398F]">
-                + Detailed anterior eye examination differential diagnosis where indicated by answers.
+                + Detailed anterior eye examination ComfortTimeAfterBlinkTest diagnosis where indicated by answers.
             </div>
         </GradientBorderBox>
     </Card>
