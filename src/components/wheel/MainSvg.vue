@@ -28,6 +28,35 @@ const controlsStore = useControlsStore();
             :class="controlsStore.managementAreaClasses"
             class="management-svg absolute max-h-[800px] w-full" />
 
+        <!-- Key Area -->
+        <div
+            class="w-54 absolute bottom-0 right-0 flex flex-col gap-2 border-4 border-[#E5E6E7] p-3 font-euclid-circular-medium text-sm">
+            <div class="flex gap-2">
+                <div class="items-center justify-center">
+                    <img
+                        class="h-5 w-5"
+                        src="../../assets/svg/orange-dot.svg" />
+                </div>
+                <div class="grow items-center">Simple Treatment</div>
+            </div>
+            <div class="flex gap-2">
+                <div class="items-center justify-center">
+                    <img
+                        class="h-5 w-5"
+                        src="../../assets/svg/silver-dot.svg" />
+                </div>
+                <div class="grow items-center">Moderate Treatment</div>
+            </div>
+            <div class="flex gap-2">
+                <div class="items-center justify-center">
+                    <img
+                        class="h-5 w-5"
+                        src="../../assets/svg/yellow-dot.svg" />
+                </div>
+                <div class="grow items-center">Complex Treatment</div>
+            </div>
+        </div>
+
         <!-- Grayscale class needs to exist in a template to build in Tailwind -->
         <span class="hidden grayscale"></span>
     </div>
