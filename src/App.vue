@@ -4,7 +4,7 @@ import WheelSvg from '@/components/wheel/MainSvg.vue';
 import VerticalSlider from '@/components/VerticalSlider.vue';
 import Card from '@/components/Card.vue';
 import ButtonMenu from '@/components/layout/ButtonMenu.vue';
-import TestOutput from '@/components/TestOutput.vue';
+// import TestOutput from '@/components/TestOutput.vue';
 
 const controlsStore = useControlsStore();
 </script>
@@ -21,7 +21,7 @@ const controlsStore = useControlsStore();
             <!-- Wheel Area -->
             <div class="grow">
                 <WheelSvg />
-                <TestOutput />
+                <!-- <TestOutput /> -->
             </div>
         </div>
 
