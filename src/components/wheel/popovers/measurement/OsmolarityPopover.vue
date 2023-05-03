@@ -8,7 +8,7 @@ import OsmolarityIcon from '@/components/icons/Osmolarity.vue';
         title="Osmolarity"
         class="absolute left-1/2 top-[300px] z-10 col-span-5 ml-[-260px] max-w-lg">
         <template #icon>
-            <OsmolarityIcon class="!-mb-8 !-mt-10 !h-40" />
+            <OsmolarityIcon class="!-mb-12 !-mt-14 !h-40" />
         </template>
         <div>
             A tiny sample of the tear film is extracted, and the impedance used to assess the osmolarity (saltiness) of
