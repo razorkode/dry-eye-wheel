@@ -10,7 +10,7 @@ import ContactLensIcon from '@/components/icons/ContactLens.vue';
         <template #icon>
             <ContactLensIcon class="!-mb-8 !-mt-10 !h-40" />
         </template>
-        Contact lenses can disrupt the tear film and risk causing friction with the ocular surfaces and so should be
+        Contact lenses can disrupt the tear film and risk causing friction with the ocular surface and so should be
         carefully optimized, especially in those with pre-existing ocular surface disease.
     </Card>
 </template>

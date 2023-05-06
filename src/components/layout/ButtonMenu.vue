@@ -44,86 +44,86 @@ watch(sliderValue, () => {
         </GradientButton>
         <div class="grid grid-cols-2 gap-3">
             <GradientButton
-                @click="controlsStore.selectSection('triaging', 'mitigation')"
-                :class="{ active: controlsStore.selectedSection === 'triaging' }"
-                class="btn-section">
-                Triaging
-            </GradientButton>
-            <GradientButton
                 @click="controlsStore.selectSection('risk-factors', 'mitigation')"
                 :class="{ active: controlsStore.selectedSection === 'risk-factors' }"
                 class="btn-section">
                 Risk Factors
             </GradientButton>
+            <GradientButton
+                @click="controlsStore.selectSection('triaging', 'mitigation')"
+                :class="{ active: controlsStore.selectedSection === 'triaging' }"
+                class="btn-section">
+                Triaging
+            </GradientButton>
         </div>
         <div class="grid grid-cols-2 gap-3">
-            <GradientButton
-                @click="controlsStore.selectItem('questionnaire', 'triaging', 'mitigation')"
-                :class="{ active: controlsStore.selectedItem === 'questionnaire' }"
-                class="btn-orange">
-                Questionnaire
-            </GradientButton>
             <GradientButton
                 @click="controlsStore.selectItem('sleep', 'risk-factors', 'mitigation')"
                 :class="{ active: controlsStore.selectedItem === 'sleep' }"
                 class="btn-orange">
                 Sleep
             </GradientButton>
+            <GradientButton
+                @click="controlsStore.selectItem('questionnaire', 'triaging', 'mitigation')"
+                :class="{ active: controlsStore.selectedItem === 'questionnaire' }"
+                class="btn-orange">
+                Questionnaire
+            </GradientButton>
         </div>
         <div class="grid grid-cols-2 gap-3">
-            <GradientButton
-                @click="controlsStore.selectItem('differential', 'triaging', 'mitigation')"
-                :class="{ active: controlsStore.selectedItem === 'differential' }"
-                class="btn-silver">
-                Differential
-            </GradientButton>
             <GradientButton
                 @click="controlsStore.selectItem('contact-lens', 'risk-factors', 'mitigation')"
                 :class="{ active: controlsStore.selectedItem === 'contact-lens' }"
                 class="btn-orange">
                 Contact Lens
             </GradientButton>
+            <GradientButton
+                @click="controlsStore.selectItem('differential', 'triaging', 'mitigation')"
+                :class="{ active: controlsStore.selectedItem === 'differential' }"
+                class="btn-silver">
+                Differential
+            </GradientButton>
         </div>
         <div class="grid grid-cols-2 gap-3">
-            <GradientButton
-                @click="controlsStore.selectItem('prophylaxis', 'triaging', 'mitigation')"
-                :class="{ active: controlsStore.selectedItem === 'prophylaxis' }"
-                class="btn-yellow">
-                Prophylaxis
-            </GradientButton>
             <GradientButton
                 @click="controlsStore.selectItem('eye-strain', 'risk-factors', 'mitigation')"
                 :class="{ active: controlsStore.selectedItem === 'eye-strain' }"
                 class="btn-orange">
                 Eye Strain
             </GradientButton>
+            <GradientButton
+                @click="controlsStore.selectItem('prophylaxis', 'triaging', 'mitigation')"
+                :class="{ active: controlsStore.selectedItem === 'prophylaxis' }"
+                class="btn-yellow">
+                Prophylaxis
+            </GradientButton>
         </div>
         <div class="grid grid-cols-2 gap-3">
-            <div>&nbsp;</div>
             <GradientButton
                 @click="controlsStore.selectItem('environment', 'risk-factors', 'mitigation')"
                 :class="{ active: controlsStore.selectedItem === 'environment' }"
                 class="btn-silver">
                 Environment
             </GradientButton>
+            <div>&nbsp;</div>
         </div>
         <div class="grid grid-cols-2 gap-3">
-            <div>&nbsp;</div>
             <GradientButton
                 @click="controlsStore.selectItem('hormones', 'risk-factors', 'mitigation')"
                 :class="{ active: controlsStore.selectedItem === 'hormones' }"
                 class="btn-silver">
                 Hormones
             </GradientButton>
+            <div>&nbsp;</div>
         </div>
         <div class="mb-6 grid grid-cols-2 gap-3">
-            <div>&nbsp;</div>
             <GradientButton
                 @click="controlsStore.selectItem('medication-review', 'risk-factors', 'mitigation')"
                 :class="{ active: controlsStore.selectedItem === 'medication-review' }"
                 class="btn-yellow">
                 Medication Review
             </GradientButton>
+            <div>&nbsp;</div>
         </div>
 
         <!-- Measurement -->

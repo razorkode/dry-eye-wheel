@@ -16,7 +16,7 @@ import GradientBorderBox from '@/components/layout/GradientBorderBox.vue';
             </ul>
         </GradientBorderBox>
         <div>
-            Advanced technology is not required for an indicative diagnosis which can be achieved with a standardised
+            Advanced technology is not required for an indicative diagnosis, which can be achieved with a standardised
             questionnaire and the simple comfort time after blink test. Diagnosis can be aided with an ocular surface
             damage assessment with ophthalmic stains and assessment of tear film stability and osmolarity.
         </div>
