@@ -67,7 +67,7 @@ watch(sliderValue, () => {
                 @click="controlsStore.selectItem('questionnaire', 'triaging', 'mitigation')"
                 :class="{ active: controlsStore.selectedItem === 'questionnaire' }"
                 class="btn-orange">
-                Questionnaire
+                History & Symptoms
             </GradientButton>
         </div>
         <div class="grid grid-cols-2 gap-3">
