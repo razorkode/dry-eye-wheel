@@ -1,18 +1,18 @@
 <script setup>
 import LottieAnimation from '@/lib/LottieAnimation.vue';
-import LidWipesJson from '@/assets/json/lid-wipes.json';
+import NutraceuticalsJson from '@/assets/json/nutraceuticals.json';
 
 const props = defineProps({
     targetId: {
         type: String,
-        default: 'lidWipesAnimation',
+        default: 'nutraceuticalsAnimation',
     },
 });
 </script>
 
 <template>
     <LottieAnimation
-        :json="LidWipesJson"
+        :json="NutraceuticalsJson"
         :loop="true"
         :autoPlay="true" />
 </template>

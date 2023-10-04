@@ -1,18 +1,18 @@
 <script setup>
 import LottieAnimation from '@/lib/LottieAnimation.vue';
-import inOfficeTreatmentsJson from '@/assets/json/in-office-treatments.json';
+import LidHygeineJson from '@/assets/json/lid-hygeine.json';
 
 const props = defineProps({
     targetId: {
         type: String,
-        default: 'inOfficeTreatmentsAnimation',
+        default: 'lidHygeineAnimation',
     },
 });
 </script>
 
 <template>
     <LottieAnimation
-        :json="inOfficeTreatmentsJson"
+        :json="LidHygeineJson"
         :loop="true"
         :autoPlay="true" />
 </template>

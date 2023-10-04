@@ -1,12 +1,13 @@
 <script setup>
 import { useControlsStore } from '@/stores/controlsStore.js';
 import ManagementPopover from '@/components/wheel/popovers/ManagementPopover.vue';
-import LidWipesPopover from '@/components/wheel/popovers/management/LidWipesPopover.vue';
+import LidHygeinePopover from '@/components/wheel/popovers/management/LidHygeinePopover.vue';
 import WarmCompressPopover from '@/components/wheel/popovers/management/WarmCompressPopover.vue';
 import BlinkExercisesPopover from '@/components/wheel/popovers/management/BlinkExercisesPopover.vue';
 import AdvicePopover from '@/components/wheel/popovers/management/AdvicePopover.vue';
 import ArtificialTearsPopover from '@/components/wheel/popovers/management/ArtificialTearsPopover.vue';
 import LightTherapyPopover from '@/components/wheel/popovers/management/LightTherapyPopover.vue';
+import NutraceuticalsPopover from '@/components/wheel/popovers/management/NutraceuticalsPopover.vue';
 import PharmaceuticalsPopover from '@/components/wheel/popovers/management/PharmaceuticalsPopover.vue';
 import ScleralLensesPopover from '@/components/wheel/popovers/management/ScleralLensesPopover.vue';
 import PunctalPlugsPopover from '@/components/wheel/popovers/management/PunctalPlugsPopover.vue';
@@ -21,10 +22,11 @@ const controlsStore = useControlsStore();
         " />
 
     <!-- Management Section Popovers -->
-    <LidWipesPopover v-if="controlsStore.selectedItem === 'lid-wipes'" />
+    <LidHygeinePopover v-if="controlsStore.selectedItem === 'lid-hygeine'" />
     <WarmCompressPopover v-if="controlsStore.selectedItem === 'warm-compress'" />
     <BlinkExercisesPopover v-if="controlsStore.selectedItem === 'blink-exercises'" />
     <AdvicePopover v-if="controlsStore.selectedItem === 'advice'" />
+    <NutraceuticalsPopover v-if="controlsStore.selectedItem === 'nutraceuticals'" />
     <ArtificialTearsPopover v-if="controlsStore.selectedItem === 'artificial-tears'" />
     <LightTherapyPopover v-if="controlsStore.selectedItem === 'in-office-treatments'" />
     <PharmaceuticalsPopover v-if="controlsStore.selectedItem === 'pharmaceuticals'" />

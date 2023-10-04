@@ -61,6 +61,11 @@ body {
             @apply !fill-white;
         }
     }
+    .svg-fill-path {
+        path {
+            @apply !fill-white;
+        }
+    }
 
     &.svg-fill-circle {
         circle {
@@ -71,6 +76,12 @@ body {
     &.svg-stroke-polyline {
         polyline {
             @apply !stroke-white;
+        }
+    }
+
+    &.svg-fill-polyline {
+        polyline {
+            @apply !fill-white;
         }
     }
 }

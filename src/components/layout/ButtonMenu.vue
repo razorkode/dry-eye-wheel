@@ -233,10 +233,10 @@ watch(sliderValue, () => {
         </GradientButton>
         <div class="grid grid-cols-2 gap-3">
             <GradientButton
-                @click="controlsStore.selectItem('lid-wipes', null, 'management')"
-                :class="{ active: controlsStore.selectedItem === 'lid-wipes' }"
+                @click="controlsStore.selectItem('lid-hygeine', null, 'management')"
+                :class="{ active: controlsStore.selectedItem === 'lid-hygeine' }"
                 class="btn-orange">
-                Lid Wipes
+                Lid Hygeine
             </GradientButton>
             <GradientButton
                 @click="controlsStore.selectItem('warm-compress', null, 'management')"
@@ -267,34 +267,39 @@ watch(sliderValue, () => {
                 Artificial Tears
             </GradientButton>
             <GradientButton
+                @click="controlsStore.selectItem('nutraceuticals', null, 'management')"
+                :class="{ active: controlsStore.selectedItem === 'nutraceuticals' }"
+                class="btn-orange">
+                Nutraceuticals
+            </GradientButton>
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+            <GradientButton
                 @click="controlsStore.selectItem('scleral-lenses', null, 'management')"
                 :class="{ active: controlsStore.selectedItem === 'scleral-lenses' }"
                 class="btn-silver">
                 Scleral Lenses
             </GradientButton>
-        </div>
-        <div class="grid grid-cols-2 gap-3">
             <GradientButton
                 @click="controlsStore.selectItem('pharmaceuticals', null, 'management')"
                 :class="{ active: controlsStore.selectedItem === 'pharmaceuticals' }"
                 class="btn-silver">
                 Pharmaceuticals
             </GradientButton>
+        </div>
+        <div class="grid grid-cols-2 gap-3">
             <GradientButton
                 @click="controlsStore.selectItem('in-office-treatments', null, 'management')"
                 :class="{ active: controlsStore.selectedItem === 'in-office-treatments' }"
                 class="btn-silver">
                 In-Office Treatments
             </GradientButton>
-        </div>
-        <div class="grid grid-cols-2 gap-3">
             <GradientButton
                 @click="controlsStore.selectItem('punctal-plugs', null, 'management')"
                 :class="{ active: controlsStore.selectedItem === 'punctal-plugs' }"
                 class="btn-yellow">
                 Punctal Plugs
             </GradientButton>
-            <div>&nbsp;</div>
         </div>
         <!-- Empty space -->
         <div class="h-[600px]">
