@@ -281,10 +281,10 @@ watch(sliderValue, () => {
                 Pharmaceuticals
             </GradientButton>
             <GradientButton
-                @click="controlsStore.selectItem('intense-pulsed-light-therapy', null, 'management')"
-                :class="{ active: controlsStore.selectedItem === 'intense-pulsed-light-therapy' }"
+                @click="controlsStore.selectItem('in-office-treatments', null, 'management')"
+                :class="{ active: controlsStore.selectedItem === 'in-office-treatments' }"
                 class="btn-silver">
-                Intense Pulsed Light Therapy
+                In-Office Treatments
             </GradientButton>
         </div>
         <div class="grid grid-cols-2 gap-3">

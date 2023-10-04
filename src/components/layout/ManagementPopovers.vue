@@ -26,7 +26,7 @@ const controlsStore = useControlsStore();
     <BlinkExercisesPopover v-if="controlsStore.selectedItem === 'blink-exercises'" />
     <AdvicePopover v-if="controlsStore.selectedItem === 'advice'" />
     <ArtificialTearsPopover v-if="controlsStore.selectedItem === 'artificial-tears'" />
-    <LightTherapyPopover v-if="controlsStore.selectedItem === 'intense-pulsed-light-therapy'" />
+    <LightTherapyPopover v-if="controlsStore.selectedItem === 'in-office-treatments'" />
     <PharmaceuticalsPopover v-if="controlsStore.selectedItem === 'pharmaceuticals'" />
     <ScleralLensesPopover v-if="controlsStore.selectedItem === 'scleral-lenses'" />
     <PunctalPlugsPopover v-if="controlsStore.selectedItem === 'punctal-plugs'" />
