@@ -301,6 +301,14 @@ watch(sliderValue, () => {
                 Punctal Plugs
             </GradientButton>
         </div>
+        <div class="grid grid-cols-2 gap-3">
+            <GradientButton
+                @click="controlsStore.selectItem('complex-treatments', null, 'management')"
+                :class="{ active: controlsStore.selectedItem === 'complex-treatments' }"
+                class="btn-yellow">
+                Complex Treatments
+            </GradientButton>
+        </div>
         <!-- Empty space -->
         <div class="h-[600px]">
             <div class="h-[600px]">&nbsp;</div>

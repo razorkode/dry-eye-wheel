@@ -8,6 +8,7 @@ import LidHygeineIcon from '@/components/wheel/management/icons/LidHygeineIcon.v
 import NutraceuticalsIcon from '@/components/wheel/management/icons/NutraceuticalsIcon.vue';
 import PharmaceuticalsIcon from '@/components/wheel/management/icons/PharmaceuticalsIcon.vue';
 import PunctalPlugsIcon from '@/components/wheel/management/icons/PunctalPlugsIcon.vue';
+import ComplexTreatmentsIcon from '@/components/wheel/management/icons/ComplexTreatmentsIcon.vue';
 import ScleralLensesIcon from '@/components/wheel/management/icons/ScleralLensesIcon.vue';
 import WarmCompressIcon from '@/components/wheel/management/icons/WarmCompressIcon.vue';
 
@@ -133,6 +134,7 @@ const controlsStore = useControlsStore();
         <NutraceuticalsIcon />
         <PharmaceuticalsIcon />
         <PunctalPlugsIcon />
+        <ComplexTreatmentsIcon />
         <ScleralLensesIcon />
         <WarmCompressIcon />
 

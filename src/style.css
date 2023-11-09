@@ -67,8 +67,26 @@ body {
         }
     }
 
+    &.svg-stroke-path {
+        path {
+            @apply !stroke-white;
+        }
+    }
+
+    &.svg-text-color {
+        tspan {
+            @apply !fill-white;
+        }
+    }
+
     &.svg-fill-circle {
         circle {
+            @apply !fill-white;
+        }
+    }
+
+    &.svg-fill-line {
+        line {
             @apply !fill-white;
         }
     }
