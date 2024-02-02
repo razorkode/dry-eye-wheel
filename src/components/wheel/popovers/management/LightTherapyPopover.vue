@@ -14,5 +14,3 @@ import InOfficeTreatmentsIcon from '@/components/icons/InOfficeTreatmentsIcon.vu
         therapy and photobiomodulation.
     </Card>
 </template>
-
-<style lang="postcss" scoped></style>

@@ -14,5 +14,3 @@ import MeibographyIcon from '@/components/icons/Meibography.vue';
         dry eye disease.
     </Card>
 </template>
-
-<style lang="postcss" scoped></style>

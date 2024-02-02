@@ -14,5 +14,3 @@ import MedicationReviewIcon from '@/components/icons/MedicationReview.vue';
         conjunction with the prescribing clinician, might allow for symptoms to be reduced.
     </Card>
 </template>
-
-<style lang="postcss" scoped></style>

@@ -35,5 +35,3 @@ const controlsStore = useControlsStore();
     <MeibomianGlandExpressionPopover v-if="controlsStore.selectedItem === 'meibomian-gland-expression'" />
     <MeibographyPopover v-if="controlsStore.selectedItem === 'meibography'" />
 </template>
-
-<style lang="postcss" scoped></style>

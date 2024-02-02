@@ -14,5 +14,3 @@ import EyeStrainIcon from '@/components/icons/EyeStrain.vue';
         can be reduced by taking regular breaks, blink exercises, and positioning screens lower than the eyes.
     </Card>
 </template>
-
-<style lang="postcss" scoped></style>

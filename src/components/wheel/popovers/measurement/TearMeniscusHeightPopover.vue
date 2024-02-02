@@ -14,5 +14,3 @@ import TearMeniscusHeightIcon from '@/components/icons/TearMeniscusHeight.vue';
         <div>Irregularity suggests poor tear film quality.</div>
     </Card>
 </template>
-
-<style lang="postcss" scoped></style>

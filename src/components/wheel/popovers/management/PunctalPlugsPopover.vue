@@ -14,5 +14,3 @@ import PunctalPlugsIcon from '@/components/icons/PunctalPlugs.vue';
         occluding the puncta.
     </Card>
 </template>
-
-<style lang="postcss" scoped></style>

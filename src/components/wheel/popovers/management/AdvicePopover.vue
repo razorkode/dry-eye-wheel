@@ -15,5 +15,3 @@ import AdviceIcon from '@/components/icons/Advice.vue';
         their practitioner being important.
     </Card>
 </template>
-
-<style lang="postcss" scoped></style>

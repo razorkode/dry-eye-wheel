@@ -14,5 +14,3 @@ import ProphylaxisIcon from '@/components/icons/Prophylaxis.vue';
         ocular surface damage and resulting dry eye symptoms.
     </Card>
 </template>
-
-<style lang="postcss" scoped></style>

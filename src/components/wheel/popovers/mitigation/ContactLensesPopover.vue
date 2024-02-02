@@ -14,5 +14,3 @@ import ContactLensIcon from '@/components/icons/ContactLens.vue';
         carefully optimized, especially in those with pre-existing ocular surface disease.
     </Card>
 </template>
-
-<style lang="postcss" scoped></style>

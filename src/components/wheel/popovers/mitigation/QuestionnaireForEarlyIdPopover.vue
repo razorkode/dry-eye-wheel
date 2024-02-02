@@ -15,5 +15,3 @@ import AdviceIcon from '@/components/icons/Advice.vue';
         changes in lifestyle can help reduce or eliminate their impact, and promote a healthier ocular surface.
     </Card>
 </template>
-
-<style lang="postcss" scoped></style>

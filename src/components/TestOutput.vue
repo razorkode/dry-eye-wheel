@@ -70,5 +70,3 @@ const showTestBox = ref(false);
         </table>
     </div>
 </template>
-
-<style lang="postcss" scoped></style>

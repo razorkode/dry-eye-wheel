@@ -14,5 +14,3 @@ import ValidatedQuestionnaireIcon from '@/components/icons/ValidatedQuestionnair
         <div>Other questionnaires can assist with management choices, but not standardized diagnosis.</div>
     </Card>
 </template>
-
-<style lang="postcss" scoped></style>

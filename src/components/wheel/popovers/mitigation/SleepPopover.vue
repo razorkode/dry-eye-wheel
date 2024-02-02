@@ -14,5 +14,3 @@ import SleepIcon from '@/components/icons/Sleep.vue';
         hours sleep per night. Encourage good sleeping habits to help reduce the risk of dry eye symptoms.
     </Card>
 </template>
-
-<style lang="postcss" scoped></style>

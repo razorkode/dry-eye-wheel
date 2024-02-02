@@ -13,5 +13,3 @@ import BlinkRateCompletenessIcon from '@/components/icons/BlinkRateCompleteness.
         Reduced blink rate or incomplete blinking can cause evaporative dry eye disease.
     </Card>
 </template>
-
-<style lang="postcss" scoped></style>

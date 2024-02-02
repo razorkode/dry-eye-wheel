@@ -14,5 +14,3 @@ import ComfortAfterBlinkTestIcon from '@/components/icons/ComfortAfterBlinkTest.
         <div>&lt; 10s indicative of dry eye disease.</div>
     </Card>
 </template>
-
-<style lang="postcss" scoped></style>

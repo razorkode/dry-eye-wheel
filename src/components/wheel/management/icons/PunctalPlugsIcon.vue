@@ -58,5 +58,3 @@ const controlsStore = useControlsStore();
 		s-0.3-2.5,2.2-1.6l2.5,1.3c0,0,0.9,0.6,1.6-0.6C406.6,465,411,455.7,410.9,455.7L410.9,455.7z" />
     </g>
 </template>
-
-<style lang="postcss" scoped></style>

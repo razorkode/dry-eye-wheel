@@ -14,5 +14,3 @@ import ScleralLensesIcon from '@/components/icons/ScleralLenses.vue';
         which hold tears between the lens and cornea/conjunctiva and prevent drying of the ocular surface.
     </Card>
 </template>
-
-<style lang="postcss" scoped></style>

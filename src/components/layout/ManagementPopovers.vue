@@ -7,7 +7,7 @@ import BlinkExercisesPopover from '@/components/wheel/popovers/management/BlinkE
 import AdvicePopover from '@/components/wheel/popovers/management/AdvicePopover.vue';
 import ArtificialTearsPopover from '@/components/wheel/popovers/management/ArtificialTearsPopover.vue';
 import LightTherapyPopover from '@/components/wheel/popovers/management/LightTherapyPopover.vue';
-import NutraceuticalsPopover from '@/components/wheel/popovers/management/NutraceuticalsPopover.vue';
+import DietAndDietarySupplementsPopover from '@/components/wheel/popovers/management/DietAndDietarySupplementsPopover.vue';
 import PharmaceuticalsPopover from '@/components/wheel/popovers/management/PharmaceuticalsPopover.vue';
 import ScleralLensesPopover from '@/components/wheel/popovers/management/ScleralLensesPopover.vue';
 import PunctalPlugsPopover from '@/components/wheel/popovers/management/PunctalPlugsPopover.vue';
@@ -27,7 +27,7 @@ const controlsStore = useControlsStore();
     <WarmCompressPopover v-if="controlsStore.selectedItem === 'warm-compress'" />
     <BlinkExercisesPopover v-if="controlsStore.selectedItem === 'blink-exercises'" />
     <AdvicePopover v-if="controlsStore.selectedItem === 'advice'" />
-    <NutraceuticalsPopover v-if="controlsStore.selectedItem === 'nutraceuticals'" />
+    <DietAndDietarySupplementsPopover v-if="controlsStore.selectedItem === 'diet-and-dietary-supplements'" />
     <ArtificialTearsPopover v-if="controlsStore.selectedItem === 'artificial-tears'" />
     <LightTherapyPopover v-if="controlsStore.selectedItem === 'in-office-treatments'" />
     <PharmaceuticalsPopover v-if="controlsStore.selectedItem === 'pharmaceuticals'" />
@@ -35,5 +35,3 @@ const controlsStore = useControlsStore();
     <PunctalPlugsPopover v-if="controlsStore.selectedItem === 'punctal-plugs'" />
     <ComplexTreatmentsPopover v-if="controlsStore.selectedItem === 'complex-treatments'" />
 </template>
-
-<style lang="postcss" scoped></style>

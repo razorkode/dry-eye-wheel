@@ -114,5 +114,3 @@ const controlsStore = useControlsStore();
         <path d="M357.3,135.9v7.1h-1.2l-3.6-4.6v4.6H351v-7.1h1.2l3.6,4.6v-4.6H357.3z" />
     </g>
 </template>
-
-<style lang="postcss" scoped></style>

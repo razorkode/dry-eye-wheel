@@ -15,5 +15,3 @@ import BlinkExercisesIcon from '@/components/icons/BlinkExercises.vue';
         issues.
     </Card>
 </template>
-
-<style lang="postcss" scoped></style>

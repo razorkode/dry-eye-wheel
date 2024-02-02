@@ -69,5 +69,3 @@ const controlsStore = useControlsStore();
             d="M682,630.4c0,0-6.2,2.9-7.7-2.2" />
     </g>
 </template>
-
-<style lang="postcss" scoped></style>

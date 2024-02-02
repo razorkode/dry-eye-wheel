@@ -14,5 +14,3 @@ import PharmaceuticalsIcon from '@/components/icons/Pharmaceuticals.vue';
         severe forms of dry eye.
     </Card>
 </template>
-
-<style lang="postcss" scoped></style>

@@ -18,5 +18,3 @@ import NonInvasiveBreakupTimeIcon from '@/components/icons/NonInvasiveBreakupTim
         <div>&lt; 10s is diagnostic of dry eye disease.</div>
     </Card>
 </template>
-
-<style lang="postcss" scoped></style>

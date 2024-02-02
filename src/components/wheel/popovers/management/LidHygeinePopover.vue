@@ -15,5 +15,3 @@ import LidHygeineIcon from '@/components/icons/LidHygeine.vue';
         control of demodex specifically.
     </Card>
 </template>
-
-<style lang="postcss" scoped></style>

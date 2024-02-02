@@ -26,5 +26,3 @@ import GradientBorderBox from '@/components/layout/GradientBorderBox.vue';
         </div>
     </Card>
 </template>
-
-<style lang="postcss" scoped></style>

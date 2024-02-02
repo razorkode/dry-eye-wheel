@@ -14,5 +14,3 @@ import FluoresceinStainingIcon from '@/components/icons/FluoresceinStaining.vue'
         <div>&gt; 5 corneal spots diagnostic of dry eye disease.</div>
     </Card>
 </template>
-
-<style lang="postcss" scoped></style>

@@ -14,5 +14,3 @@ import MeibomianGlandExpressionIcon from '@/components/icons/MeibomianGlandExpre
         disease.
     </Card>
 </template>
-
-<style lang="postcss" scoped></style>

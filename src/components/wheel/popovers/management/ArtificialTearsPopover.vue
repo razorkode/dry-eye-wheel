@@ -15,5 +15,3 @@ import ArtificialTearsIcon from '@/components/icons/ArtificialTears.vue';
         more severe forms of the disease.
     </Card>
 </template>
-
-<style lang="postcss" scoped></style>

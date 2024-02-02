@@ -31,5 +31,3 @@ const controlsStore = useControlsStore();
     <HormonesPopover v-if="controlsStore.selectedItem === 'hormones'" />
     <MedicationReviewPopover v-if="controlsStore.selectedItem === 'medication-review'" />
 </template>
-
-<style lang="postcss" scoped></style>

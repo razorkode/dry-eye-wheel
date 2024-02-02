@@ -18,5 +18,3 @@ import Card from '@/components/Card.vue';
         </div>
     </Card>
 </template>
-
-<style lang="postcss" scoped></style>

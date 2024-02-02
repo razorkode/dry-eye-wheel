@@ -1,18 +1,18 @@
 <script setup>
 import LottieAnimation from '@/lib/LottieAnimation.vue';
-import NutraceuticalsJson from '@/assets/json/nutraceuticals.json';
+import DietAndDietarySupplementsJson from '@/assets/json/diet-and-dietary-supplements.json';
 
 const props = defineProps({
     targetId: {
         type: String,
-        default: 'nutraceuticalsAnimation',
+        default: 'dietAndDietarySupplementsAnimation',
     },
 });
 </script>
 
 <template>
     <LottieAnimation
-        :json="NutraceuticalsJson"
+        :json="DietAndDietarySupplementsJson"
         :loop="true"
         :autoPlay="true" />
 </template>

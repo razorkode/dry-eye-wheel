@@ -5,7 +5,7 @@ import ArtificialTearsIcon from '@/components/wheel/management/icons/ArtificialT
 import BlinkExercisesIcon from '@/components/wheel/management/icons/BlinkExercisesIcon.vue';
 import InOfficeTreatmentsIcon from '@/components/wheel/management/icons/InOfficeTreatmentsIcon.vue';
 import LidHygeineIcon from '@/components/wheel/management/icons/LidHygeineIcon.vue';
-import NutraceuticalsIcon from '@/components/wheel/management/icons/NutraceuticalsIcon.vue';
+import DietAndDietarySupplementsIcon from '@/components/wheel/management/icons/DietAndDietarySupplementsIcon.vue';
 import PharmaceuticalsIcon from '@/components/wheel/management/icons/PharmaceuticalsIcon.vue';
 import PunctalPlugsIcon from '@/components/wheel/management/icons/PunctalPlugsIcon.vue';
 import ComplexTreatmentsIcon from '@/components/wheel/management/icons/ComplexTreatmentsIcon.vue';
@@ -131,7 +131,7 @@ const controlsStore = useControlsStore();
         <BlinkExercisesIcon />
         <InOfficeTreatmentsIcon />
         <LidHygeineIcon />
-        <NutraceuticalsIcon />
+        <DietAndDietarySupplementsIcon />
         <PharmaceuticalsIcon />
         <PunctalPlugsIcon />
         <ComplexTreatmentsIcon />

@@ -267,10 +267,10 @@ watch(sliderValue, () => {
                 Artificial Tears
             </GradientButton>
             <GradientButton
-                @click="controlsStore.selectItem('nutraceuticals', null, 'management')"
-                :class="{ active: controlsStore.selectedItem === 'nutraceuticals' }"
+                @click="controlsStore.selectItem('diet-and-dietary-supplements', null, 'management')"
+                :class="{ active: controlsStore.selectedItem === 'diet-and-dietary-supplements' }"
                 class="btn-orange">
-                Nutraceuticals
+                Diet And Dietary Supplements
             </GradientButton>
         </div>
         <div class="grid grid-cols-2 gap-3">
@@ -315,5 +315,3 @@ watch(sliderValue, () => {
         </div>
     </div>
 </template>
-
-<style lang="postcss" scoped></style>

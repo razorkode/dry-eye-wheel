@@ -14,5 +14,3 @@ import HormonesIcon from '@/components/icons/Hormones.vue';
         film. When hormones are changing, a medical review might be warranted.
     </Card>
 </template>
-
-<style lang="postcss" scoped></style>

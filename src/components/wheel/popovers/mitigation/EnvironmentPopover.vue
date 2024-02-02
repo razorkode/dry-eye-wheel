@@ -14,5 +14,3 @@ import EnvironmentIcon from '@/components/icons/Environment.vue';
         when the dry eye symptoms are worst can allow for targeting the necessary adaptations.
     </Card>
 </template>
-
-<style lang="postcss" scoped></style>

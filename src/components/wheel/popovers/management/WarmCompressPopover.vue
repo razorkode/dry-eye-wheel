@@ -16,5 +16,3 @@ import WarmCompressIcon from '@/components/icons/WarmCompress.vue';
         is the major factor leading to evaporative dry eye.
     </Card>
 </template>
-
-<style lang="postcss" scoped></style>

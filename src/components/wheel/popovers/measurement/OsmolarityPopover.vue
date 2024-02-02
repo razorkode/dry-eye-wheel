@@ -17,5 +17,3 @@ import OsmolarityIcon from '@/components/icons/Osmolarity.vue';
         <div>&GreaterEqual; 308 mOsm/L or an inter-eye difference of &gt; 8 is diagnostic of dry eye disease.</div>
     </Card>
 </template>
-
-<style lang="postcss" scoped></style>

@@ -22,5 +22,3 @@ import LissamineGreenStainingIcon from '@/components/icons/LissamineGreenStainin
         </div>
     </Card>
 </template>
-
-<style lang="postcss" scoped></style>

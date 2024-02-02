@@ -13,5 +13,3 @@ import ComplexTreatmentsIcon from '@/components/icons/ComplexTreatments.vue';
         Complex treatments such as serum drops/amniotic membranes.
     </Card>
 </template>
-
-<style lang="postcss" scoped></style>
