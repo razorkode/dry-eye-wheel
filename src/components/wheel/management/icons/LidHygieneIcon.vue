@@ -5,7 +5,7 @@ const controlsStore = useControlsStore();
 
 <template>
     <g
-        :class="{ 'svg-active': controlsStore.selectedItem === 'lid-hygeine' }"
+        :class="{ 'svg-active': controlsStore.selectedItem === 'lid-hygiene' }"
         class="svg-fill-path svg-fill-circle svg-stroke-polyline svg-fill-polyline">
         <path d="M650.5,651.2v5.7h3v1.4H649v-7.1H650.5z" />
         <path d="M656.1,651.2v7.1h-1.4v-7.1H656.1z" />

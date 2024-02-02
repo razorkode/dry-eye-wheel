@@ -1,7 +1,7 @@
 <script setup>
 import { useControlsStore } from '@/stores/controlsStore.js';
 import ManagementPopover from '@/components/wheel/popovers/ManagementPopover.vue';
-import LidHygeinePopover from '@/components/wheel/popovers/management/LidHygeinePopover.vue';
+import LidHygienePopover from '@/components/wheel/popovers/management/LidHygienePopover.vue';
 import WarmCompressPopover from '@/components/wheel/popovers/management/WarmCompressPopover.vue';
 import BlinkExercisesPopover from '@/components/wheel/popovers/management/BlinkExercisesPopover.vue';
 import AdvicePopover from '@/components/wheel/popovers/management/AdvicePopover.vue';
@@ -23,7 +23,7 @@ const controlsStore = useControlsStore();
         " />
 
     <!-- Management Section Popovers -->
-    <LidHygeinePopover v-if="controlsStore.selectedItem === 'lid-hygeine'" />
+    <LidHygienePopover v-if="controlsStore.selectedItem === 'lid-hygiene'" />
     <WarmCompressPopover v-if="controlsStore.selectedItem === 'warm-compress'" />
     <BlinkExercisesPopover v-if="controlsStore.selectedItem === 'blink-exercises'" />
     <AdvicePopover v-if="controlsStore.selectedItem === 'advice'" />

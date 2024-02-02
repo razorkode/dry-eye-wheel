@@ -233,10 +233,10 @@ watch(sliderValue, () => {
         </GradientButton>
         <div class="grid grid-cols-2 gap-3">
             <GradientButton
-                @click="controlsStore.selectItem('lid-hygeine', null, 'management')"
-                :class="{ active: controlsStore.selectedItem === 'lid-hygeine' }"
+                @click="controlsStore.selectItem('lid-hygiene', null, 'management')"
+                :class="{ active: controlsStore.selectedItem === 'lid-hygiene' }"
                 class="btn-orange">
-                Lid Hygeine
+                Lid Hygiene
             </GradientButton>
             <GradientButton
                 @click="controlsStore.selectItem('warm-compress', null, 'management')"
