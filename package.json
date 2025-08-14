@@ -10,17 +10,17 @@
     "devDependencies": {
         "@vitejs/plugin-vue": "^4.1.0",
         "autoprefixer": "^10.4.14",
-        "axios": "^1.4.0",
+        "axios": "^1.11.0",
         "lottie-vuejs": "^0.4.0",
-        "pinia": "^2.0.35",
+        "pinia": "^3.0.3",
         "postcss": "^8.4.23",
         "postcss-import": "^15.1.0",
         "postcss-nested": "^6.0.1",
         "prettier": "^2.8.8",
         "prettier-plugin-tailwindcss": "^0.2.7",
         "tailwindcss": "^3.3.2",
-        "vite": "^4.2.0",
-        "vue": "^3.2.47",
+        "vite": "^7.1.2",
+        "vue": "^3.5.18",
         "vue-slider-component": "^4.1.0-beta.7"
     }
 }
